@@ -1,6 +1,7 @@
+import math
 def lets_go():
     while True:
-        print("\nEnter the task number from 1 to 5 to check.\n"
+        print("\n<<<Enter the task number from 1 to 5 to check.>>>\n"
               "\nFor quit enter 0")
         num = enter_number("> ")
         if num == 1:
@@ -12,7 +13,18 @@ def lets_go():
                   "для всех значений предикат.")
             check_predicate(enter_list())
         elif num == 3:
+            print("Напишите программу, которая принимает на вход координаты точки (X и Y), "
+                  "\nпричём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка "
+                  "\n(или на какой оси она находится).")
             quarter_number()
+        elif num == 4:
+            print(" 4. Напишите программу, которая по заданному номеру четверти,"
+                  "\nпоказывает диапазон возможных координат точек в этой четверти (x и y).")
+            quarter_coord()
+        elif num == 5:
+            print("5. Напишите программу, которая принимает на вход координаты двух точек "
+                  "\nи находит расстояние между ними в 2D пространстве.")
+            coord_in_2d()
         elif num == 0:
             break
         else:
@@ -72,22 +84,58 @@ def check_predicate(x):
 # - x=-34; y=-30 -> 3
 
 def quarter_number():
-
     while True:
         x = enter_number("Enter the number for x coordinate\nx = ")
         y = enter_number("Enter the number for x coordinate\ny = ")
         if x == 0 or y == 0:
-            print("X or Y can't be equal to 0, please try again.\n")
+            print(" \nX or Y can't be equal to 0, please try again.\n")
         else:
             break
     if x > 0 and y > 0:
-        print(f'\nThe quarter number for\nx = {x}\ny = {y}\nis I quarter')
+        print(f' \nThe quarter number for\nx = {x}\ny = {y}\nis I quarter.')
     elif x < 0 < y:
-        print(f'\nThe quarter number for\nx = {x}\ny = {y}\nis II quarter')
+        print(f' \nThe quarter number for\nx = {x}\ny = {y}\nis II quarter.')
     elif x < 0 and y < 0:
-        print(f'\nThe quarter number for\nx = {x}\ny = {y}\nis III quarter')
+        print(f' \nThe quarter number for\nx = {x}\ny = {y}\nis III quarter.')
     elif y < 0 < x:
-        print(f'\nThe quarter number for\nx = {x}\ny = {y}\nis IV quarter')
+        print(f' \nThe quarter number for\nx = {x}\ny = {y}\nis IV quarter.')
+
+
+# 4. Напишите программу, которая по заданному номеру четверти,
+# показывает диапазон возможных координат точек в этой четверти (x и y).
+
+def quarter_coord():
+    while True:
+        num = enter_number("Enter the number of quarter:\nQuarter №  ")
+        if num > 4 or num < 1:
+            print(" \nQuarter can be 1, 2, 3 or 4, please try again.\n")
+        else:
+            break
+    if num == 1:
+        print(f' \nFor the quarter №{num}, point can be in the following range (x > 0;y > 0).')
+    elif num == 2:
+        print(f' \nFor the quarter №{num}, point can be in the following range (x < 0;y > 0).')
+    elif num == 3:
+        print(f' \nFor the quarter №{num}, point can be in the following range (x < 0;y < 0).')
+    elif num == 4:
+        print(f' \nFor the quarter №{num}, point can be in the following range (x > 0;y < 0).')
+
+
+# 5. Напишите программу, которая принимает на вход координаты двух точек
+# и находит расстояние между ними в 2D пространстве.
+# Пример:
+# - A (3,6); B (2,1) -> 5,09
+# - A (7,-5); B (1,-1) -> 7,21
+
+
+def coord_in_2d():
+    x1 = float(enter_number("Enter x1 "))
+    y1 = float(enter_number("Enter y1 "))
+    x2 = float(enter_number("Enter x2 "))
+    y2 = float(enter_number("Enter y2 "))
+    result = math.sqrt(math.pow((x1 - x2), 2) + math.pow((y1 - y2), 2))
+
+    print(f"A ({x1},{y1}); B ({x2},{y2}) -> {round(result, 2)}")
 
 
 lets_go()
