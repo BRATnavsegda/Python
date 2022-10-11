@@ -1,4 +1,6 @@
 import math
+
+
 def lets_go():
     while True:
         print("\n<<<Enter the task number from 1 to 5 to check.>>>\n"
@@ -26,6 +28,8 @@ def lets_go():
                   "\nи находит расстояние между ними в 2D пространстве.")
             coord_in_2d()
         elif num == 0:
+            print("\nАнекдот напоследок: \n\nВот чем хорош Интернет — он дает возможность высказаться каждому."
+                  "\nА вот чем Интернет плох: он дает возможность высказаться каждому. ")
             break
         else:
             print("Enter the correct number, please")
