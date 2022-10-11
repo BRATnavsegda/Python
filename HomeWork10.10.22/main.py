@@ -9,7 +9,7 @@ def lets_go():
         if num == 1:
             print("1. Напишите программу, которая принимает на вход цифру, обозначающую день недели, "
                   "\nи проверяет, является ли этот день выходным.")
-            if_holiday(enter_number("Enter the number of the day of the week from 1 to 7 \n> "))
+            if_holiday()
         elif num == 2:
             print("2. Напишите программу для проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z\n"
                   "для всех значений предикат.")
@@ -55,7 +55,13 @@ def enter_number(message):
     return int(number)
 
 
-def if_holiday(day_number):
+def if_holiday():
+    while True:
+        day_number = enter_number("Enter the number of the day of the week from 1 to 7 \n> ")
+        if day_number < 1 or day_number > 7:
+            print(" \nThe number of the day of the week can be only from 1 to 7, please try again.\n")
+        else:
+            break
     if int(day_number) == 6 or int(day_number) == 7:
         print(f'The entered day of the week is a holiday, Congratulations\n')
     else:
