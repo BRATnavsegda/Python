@@ -1,7 +1,7 @@
 def lets_go():
     while True:
-        print("Enter the task number from 1 to 5 to check.\n"
-              "For quit enter 0")
+        print("\nEnter the task number from 1 to 5 to check.\n"
+              "\nFor quit enter 0")
         num = enter_number("> ")
         if num == 1:
             print("1. Напишите программу, которая принимает на вход цифру, обозначающую день недели, "
@@ -11,8 +11,12 @@ def lets_go():
             print("2. Напишите программу для проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z\n"
                   "для всех значений предикат.")
             check_predicate(enter_list())
+        elif num == 3:
+            quarter_number()
         elif num == 0:
             break
+        else:
+            print("Enter the correct number, please")
 
 
 # 1. Напишите программу, которая принимает на вход цифру, обозначающую день недели,
@@ -57,7 +61,7 @@ def check_predicate(x):
     print(result)
 
 
-# Напишите программу, которая принимает на вход координаты точки (X и Y),
+# 3. Напишите программу, которая принимает на вход координаты точки (X и Y),
 # причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка
 # (или на какой оси она находится).
 #
@@ -68,6 +72,7 @@ def check_predicate(x):
 # - x=-34; y=-30 -> 3
 
 def quarter_number():
+
     while True:
         x = enter_number("Enter the number for x coordinate\nx = ")
         y = enter_number("Enter the number for x coordinate\ny = ")
@@ -75,4 +80,14 @@ def quarter_number():
             print("X or Y can't be equal to 0, please try again.\n")
         else:
             break
+    if x > 0 and y > 0:
+        print(f'\nThe quarter number for\nx = {x}\ny = {y}\nis I quarter')
+    elif x < 0 < y:
+        print(f'\nThe quarter number for\nx = {x}\ny = {y}\nis II quarter')
+    elif x < 0 and y < 0:
+        print(f'\nThe quarter number for\nx = {x}\ny = {y}\nis III quarter')
+    elif y < 0 < x:
+        print(f'\nThe quarter number for\nx = {x}\ny = {y}\nis IV quarter')
+
+
 lets_go()
