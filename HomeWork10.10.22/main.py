@@ -13,7 +13,7 @@ def lets_go():
         elif num == 2:
             print("2. Напишите программу для проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z\n"
                   "для всех значений предикат.")
-            check_predicate(enter_list())
+            check_predicate()
         elif num == 3:
             print("Напишите программу, которая принимает на вход координаты точки (X и Y), "
                   "\nпричём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка "
@@ -76,12 +76,23 @@ def enter_list():
     return result
 
 
-def check_predicate(x):
-    left = not (x[0] or x[1] or x[2])
-    right = not x[0] and not x[1] and not x[2]
-    result = left == right
-    print(result)
+# def check_predicate(x):
+#     left = not (x[0] or x[1] or x[2])
+#     right = not x[0] and not x[1] and not x[2]
+#     result = left == right
+#     print(result)
+#
+def check_predicate():
+    for x in range(2):
+        for y in range(2):
+            for z in range(2):
+                left = not(x or y or z)
+                right = not x and not y and not z
 
+                if left == right:
+                    print(f'{x} {y} {z} -> True')
+                else:
+                    print(f'{x} {y} {z} -> False')
 
 # 3. Напишите программу, которая принимает на вход координаты точки (X и Y),
 # причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка
