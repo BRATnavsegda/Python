@@ -65,6 +65,15 @@ def count_numbers():
 #
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
+def factorial_n():
+    result: int = 1
+    n = enter_number("Enter number:\nN = ")
+    for i in range(n):
+        if i <= n:
+            i += 1
+            result *= i
+            print(result)
+
 
 # 3) Задайте список из n чисел последовательности (1 + 1/n)^n и выведите на экран их сумму.
 #
