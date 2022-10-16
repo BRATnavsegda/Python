@@ -1,3 +1,6 @@
+import random
+
+
 def lets_go():
     while True:
         print("\n<<<Enter the task number from 1 to 5 to check.>>>\n"
@@ -7,26 +10,32 @@ def lets_go():
             print("1. Напишите программу, которая принимает на вход вещественное число "
                   "\nи показывает сумму его цифр.")
             count_numbers()
+
         elif int(num) == 2:
             print("2. Напишите программу, которая принимает на вход число N \n"
                   "и выдает набор произведений чисел от 1 до N.")
             factorial_n()
+
         elif int(num) == 3:
             print("3. Задайте список из n чисел последовательности (1 + 1/n)^n и выведите на экран их сумму.")
             for_task3()
+
         elif int(num) == 4:
             print(" 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N].\n"
                   "Найдите произведение элементов на указанных позициях.\n"
                   "Позиции вводятся с клавиатуры.")
             for_task4()
+
         elif int(num) == 5:
             print("5. Реализуйте алгоритм перемешивания списка.")
+            for_task5()
 
         elif int(num) == 0:
             print("\nАнекдот напоследок: \n\n"
                   "Instagram был заблокирован в России.\n"
                   "Количество пользователей из Нидерландов увеличилось на 59 млн.\n")
             break
+
         else:
             print("Enter the correct number, please")
 
@@ -40,6 +49,11 @@ def enter_number(message):
         print("Please enter the number, try again!")
         return enter_number(message)
     return number
+
+
+def enter_list():
+    user_list = input("Enter your list, separate by space:\n>").split()
+    return user_list
 
 
 # 1) Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
@@ -119,9 +133,25 @@ def for_task4():
         return for_task4()
 
 
-
-
 # 5) Реализуйте алгоритм перемешивания списка.
+
+
+def for_task5():
+    user_list = enter_list()
+    print(f"This is your list:\n{user_list}\n")
+
+    mixed_list = user_list[:]
+    list_length = len(mixed_list)
+
+    for i in range(list_length):
+        index = random.randint(0, list_length - 1)
+        temp = mixed_list[i]
+        mixed_list[i] = mixed_list[index]
+        mixed_list[index] = temp
+
+    print(f"This is your mixed list:\n{mixed_list}\n")
+
+    return mixed_list
 
 
 lets_go()
