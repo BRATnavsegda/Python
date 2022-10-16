@@ -99,7 +99,7 @@ def for_task3():
 
 
 def for_task4():
-    num = int(enter_number("Enter the number of items to create the list:\n N = "))
+    num = int(enter_number("Enter the number to create the list:\n N = "))
     n_list = []
     temp = -num - 1
 
@@ -111,7 +111,7 @@ def for_task4():
     first_num = int(enter_number("Enter number one for product of elements:\n №1 = "))
     second_num = int(enter_number("Enter number two for product of elements:\n №2 = "))
 
-    if 0 < first_num <= len(n_list) and 0 < first_num <= len(n_list):
+    if 0 < first_num <= len(n_list) and 0 < second_num <= len(n_list):
         result = n_list[first_num-1] * n_list[second_num-1]
         print(f"The product of elements at specified positions: {result}")
     else:
