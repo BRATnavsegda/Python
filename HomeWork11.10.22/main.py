@@ -102,10 +102,12 @@ def factorial_n():
 def for_task3():
     num = int(enter_number("Enter your number\nn = "))
     result = {}
+    summa: int = 0
     for i in range(num):
         i += 1
         result[i] = round(((1 + 1 / i) ** i), 2)
-    print(result)
+        summa += result[i]
+    print(f"{result}\nSum = {summa}")
 
 
 # 4) Задайте список из N элементов, заполненных числами из промежутка [-N, N].
@@ -115,11 +117,11 @@ def for_task3():
 def for_task4():
     num = int(enter_number("Enter the number to create the list:\n N = "))
     n_list = []
-    temp = -num - 1
+    temp = 0
 
     while num != temp:
         temp += 1
-        n_list.append(temp)
+        n_list.append(random.randint(-num, num))
     print(f"This is your list:\n{n_list}")
 
     first_num = int(enter_number("Enter number one for product of elements:\n №1 = "))
