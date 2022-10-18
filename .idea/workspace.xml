@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="reload1.0">
+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="ends homework 11.10.22">
+      <change afterPath="$PROJECT_DIR$/HomeWorkSeminar3/Sem3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWork11.10.22/main (1).py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWork11.10.22/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork11.10.22/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
