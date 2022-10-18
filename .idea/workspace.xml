@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="ends homework 11.10.22">
-      <change afterPath="$PROJECT_DIR$/HomeWorkSeminar3/Sem3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWork11.10.22/main (1).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWork11.10.22/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork11.10.22/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,12 +11,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="29fc8d00e8d53c40839f1f775f18742c0e4ad112" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -142,7 +148,35 @@
       <option name="project" value="LOCAL" />
       <updated>1665924473714</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="reload1.01">
+      <created>1665927111766</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665927111766</updated>
+    </task>
+    <task id="LOCAL-00005" summary="reload1.03">
+      <created>1665928298305</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665928298305</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ends homework 11.10.22">
+      <created>1665932206495</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665932206495</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ends homework 11.10.22">
+      <created>1665932274475</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665932274475</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +194,12 @@
     <MESSAGE value="finish homework" />
     <MESSAGE value="finish homework1.0" />
     <MESSAGE value="reload1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="reload1.0" />
+    <MESSAGE value="reload1.01" />
+    <MESSAGE value="reload1.02" />
+    <MESSAGE value="reload1.03" />
+    <MESSAGE value="reload1.04" />
+    <MESSAGE value="ends homework 11.10.22" />
+    <option name="LAST_COMMIT_MESSAGE" value="ends homework 11.10.22" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
