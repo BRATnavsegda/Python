@@ -121,26 +121,27 @@ def for_task2():
 #
 # Пример:
 #
-# - [1.1, 1.2, 3.1, 5, 10.01] => 0.19        1.1 1.2 3.1 5 10.01
+# - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
 
 def for_task3():
-    user_list = [1.1, 1.2, 3.1, 5,
-                 10.01]  # enter_list("Задайте список из нескольких вещественных чисел, разделённых пробелами:\n>")
+    user_list = enter_list("\nЗадайте список из нескольких вещественных чисел, разделённых пробелами:\n>")
+    # [1.1, 1.2, 3.1, 5, 10.01]
+    print(f'Это ваш список: {user_list}')
     min_el = max_el = 0.0
-    print(user_list)
 
     for i in range(len(user_list)):
-        float(user_list[i])
-        user_list[i] %= 1
-        if user_list[i] > max_el:
-            max_el = user_list[i]
-        elif user_list[i] < min_el:
-            min_el = user_list[i]
+        temp = float(user_list[i])
+
+        temp %= 1
+        if temp > max_el:
+            max_el = temp
+        elif temp < min_el:
+            min_el = temp
 
     result = int((max_el - min_el) * 100) / 100
 
-    print(result)
+    print(f'Разница между максимальным и минимальным значением \nдробной части элементов-->{result}')
 
 
 # 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.

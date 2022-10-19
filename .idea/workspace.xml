@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="changed1.1.0 homework 3 18.10.22">
-      <change afterPath="$PROJECT_DIR$/Lection2/lect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file.py" afterDir="false" />
+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="end homework sem3 1.0.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py" afterDir="false" />
     </list>
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666187510426</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="end homework sem3 1.0.0">
+      <created>1666213309658</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666213309658</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +248,8 @@
     <MESSAGE value="ends homework 11.10.22" />
     <MESSAGE value="changed1.0.0 homework 3 18.10.22" />
     <MESSAGE value="changed1.1.0 homework 3 18.10.22" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed1.1.0 homework 3 18.10.22" />
+    <MESSAGE value="end homework sem3 1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="end homework sem3 1.0.0" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
