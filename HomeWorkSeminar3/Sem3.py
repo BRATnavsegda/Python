@@ -20,25 +20,31 @@ def lets_go():
             print("3. Задайте список из вещественных чисел. \n"
                   "Напишите программу, которая найдёт разницу между \n"
                   "максимальным и минимальным значением дробной части элементов.")
+            for_task3()
 
         elif int(num) == 4:
             print(" 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.")
+            for_task4()
 
         elif int(num) == 5:
             print("5. Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.")
+            for_task5()
 
         elif int(num) == 0:
             print("\nАнекдот напоследок: \n\n"
-                  "Instagram был заблокирован в России.\n"
-                  "Количество пользователей из Нидерландов увеличилось на 59 млн.\n")
+                  "1 монитор — обычный программист, 2 монитора — продвинутый программист, \n"
+                  "3 монитора — системный программист, 4 монитора — охранник.\n")
+
             break
 
         else:
             print("Введите !правильный! номер (от 1 до 5), попробуйте ещё раз...")
 
-def rand_num(start = -100, finish = 100):
+
+def rand_num(start=-100, finish=100):
     num = random.randint(start, finish)
     return num
+
 
 def enter_number(message):
     number = input(message)
@@ -101,11 +107,11 @@ def for_task2():
 
     if len_list % 2 == 0:
         for i in range(int(len_list / 2)):
-            pos_list.append(user_list[i] * user_list[-i-1])
+            pos_list.append(user_list[i] * user_list[-i - 1])
 
     else:
         for i in range(int(len_list / 2 + 1)):
-            pos_list.append(user_list[i] * user_list[-i-1])
+            pos_list.append(user_list[i] * user_list[-i - 1])
 
     print(f'\nСписок произведений пар чисел:\n{pos_list}')
 
@@ -119,7 +125,8 @@ def for_task2():
 
 
 def for_task3():
-    user_list = [1.1, 1.2, 3.1, 5, 10.01]    # enter_list("Задайте список из нескольких вещественных чисел, разделённых пробелами:\n>")
+    user_list = [1.1, 1.2, 3.1, 5,
+                 10.01]  # enter_list("Задайте список из нескольких вещественных чисел, разделённых пробелами:\n>")
     min_el = max_el = 0.0
     print(user_list)
 
@@ -136,9 +143,6 @@ def for_task3():
     print(result)
 
 
-for_task3()
-
-
 # 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 #
 # Пример:
@@ -146,9 +150,21 @@ for_task3()
 # - 45 -> 101101
 # - 3 -> 11
 # - 2 -> 10
-#
-#
-#
+
+
+def for_task4():
+    user_num = abs(int(enter_number("Введите десятичное число для преобразования в двоичное:\n-->")))
+    temp = user_num
+    result = []
+
+    while temp != 0:
+        result.append(temp % 2)
+        temp = int(temp / 2)
+
+    result.reverse()
+    print(f'Число {user_num} в двоичной системе счисления: {"".join(map(str, result))}')
+
+
 # 5. Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
 #
 # Пример:
@@ -157,5 +173,25 @@ for_task3()
 # [Негафибоначчи]
 # (Fn = F(n+2)−F(n+1).
 # Они также могут быть определены по формуле F−n = (−1)n+1Fn..)
+
+def for_task5():
+    user_num = 8  # abs(int(enter_number("Введите число для составления списка:\n-->")))
+    if user_num == 0:
+        print([0])
+
+    else:
+        res = [0, 1]
+        negative_res = [1, 0]
+
+        for i in range(2, user_num + 1):
+            res.append(res[i - 1] + res[i - 2])
+            negative_res.insert(0, negative_res[1] - negative_res[0])
+
+        del(res[0])
+        negative_res.extend(res)
+        print(negative_res)
+
+
+lets_go()
 
 
