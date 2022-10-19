@@ -14,6 +14,7 @@ def lets_go():
         elif int(num) == 2:
             print("2. Напишите программу, которая найдёт произведение пар чисел списка. \n"
                   "Парой считаем первый и последний элемент, второй и предпоследний и т.д.")
+            for_task2()
 
         elif int(num) == 3:
             print("3. Задайте список из вещественных чисел. \n"
@@ -63,24 +64,20 @@ def enter_list(message):
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 def for_task1():
-    user_list = []  # enter_list("Задайте список из нескольких чисел, разделённых пробелами:\n>")
+    user_list = []
     rand = rand_num(5, 11)
     for n in range(rand):
         user_list.append(rand_num())
+    print(f'\nЭто ваш список:\n{user_list}')
+
     i = 1
     result = 0
-    print(f'\nЭто ваш список:\n{user_list}')
     print("На нечётных позициях находятся элементы: ", sep="", end="")
     while i < len(user_list):
         result += int(user_list[i])
         print(f'-->{user_list[i]}', sep=" ", end=" ")
         i += 2
     print(f'\nСуммой элементов стоящих на нечётных позициях вашего списка будет: {result}')
-
-
-for_task1()
-
-
 
 
 # 2. Напишите программу, которая найдёт произведение пар чисел списка.
@@ -90,18 +87,58 @@ for_task1()
 #
 # - [2, 3, 4, 5, 6] => [12, 15, 16];
 # - [2, 3, 5, 6] => [12, 15]
-#
-#
-#
+
+
+def for_task2():
+    user_list = []
+    rand = rand_num(4, 6)
+    for n in range(rand):
+        user_list.append(rand_num(-10, 10))
+    print(f'\nЭто ваш список:\n{user_list}')
+
+    pos_list = []
+    len_list = len(user_list)
+
+    if len_list % 2 == 0:
+        for i in range(int(len_list / 2)):
+            pos_list.append(user_list[i] * user_list[-i-1])
+
+    else:
+        for i in range(int(len_list / 2 + 1)):
+            pos_list.append(user_list[i] * user_list[-i-1])
+
+    print(f'\nСписок произведений пар чисел:\n{pos_list}')
+
+
 # 3. Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу
 # между максимальным и минимальным значением дробной части элементов.
 #
 # Пример:
 #
-# - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
-#
-#
-#
+# - [1.1, 1.2, 3.1, 5, 10.01] => 0.19        1.1 1.2 3.1 5 10.01
+
+
+def for_task3():
+    user_list = [1.1, 1.2, 3.1, 5, 10.01]    # enter_list("Задайте список из нескольких вещественных чисел, разделённых пробелами:\n>")
+    min_el = max_el = 0.0
+    print(user_list)
+
+    for i in range(len(user_list)):
+        float(user_list[i])
+        user_list[i] %= 1
+        if user_list[i] > max_el:
+            max_el = user_list[i]
+        elif user_list[i] < min_el:
+            min_el = user_list[i]
+
+    result = int((max_el - min_el) * 100) / 100
+
+    print(result)
+
+
+for_task3()
+
+
 # 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.
 #
 # Пример:
