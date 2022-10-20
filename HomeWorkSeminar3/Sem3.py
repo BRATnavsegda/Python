@@ -81,7 +81,7 @@ def for_task1():
     print("На нечётных позициях находятся элементы: ", sep="", end="")
     while i < len(user_list):
         result += int(user_list[i])
-        print(f'-->{user_list[i]}', sep=" ", end=" ")
+        print(f'--> {user_list[i]}', sep=" ", end=" ")
         i += 2
     print(f'\nСуммой элементов стоящих на нечётных позициях вашего списка будет: {result}')
 
