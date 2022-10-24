@@ -28,7 +28,10 @@ def lets_go():
                   "k - максимальная степень многочлена, следующий степень следующего на 1 меньше и так до ноля. "
                   "Коэффициенты расставляет random, поэтому при коэффициенте 0 "
                   "просто пропускаем данную итерацию степени. Записываем результат в файл.")
-            for_task4()
+            # for_task4()
+            write_in('file1.txt', for_task4())
+            write_in('file2.txt', for_task4())
+            print("Два полученных многочлена записаны в разные файлы, на память.")
 
         elif int(num) == 5:
             print("5. Даны два файла, в каждом из которых находится запись многочлена. "
@@ -65,6 +68,17 @@ def enter_number(message):
 def enter_list(message):
     user_list = input(message).split()
     return user_list
+
+
+def write_in(file, inp_data):
+    with open(file, 'w') as data:
+        data.write(inp_data)
+
+
+def read_in(file):
+    with open(file, 'r') as data:
+        r = data.read()
+        return r
 
 
 # 1. Вычислить число Пи c заданной точностью d
@@ -147,7 +161,7 @@ def for_task3():
 
 
 def for_task4():
-    user_num = int(enter_number("Введите максимальную степень многочлена (от 1 до 10):\nk="))
+    user_num = int(enter_number("Введите максимальную степень многочлена (от 1 до 10):\nk = "))
 
     if user_num < 1 or user_num > 10:
         print("Не вводите степень больше 10 или меньше 1, пробуем ещё раз...")
@@ -178,8 +192,32 @@ def for_task4():
 
     print(result2)
 
+    return result2
 
-for_task4()  # ещё нужно записать в файл
+
+def for_task5():
+    many_xy1 = read_in("file1.txt")
+    many_xy2 = read_in("file2.txt")
+    a = many_xy1[:-3].replace(" ", "").replace("^", "").split("+")
+    b = many_xy2[:-3].replace(" ", "").replace("^", "").split("+")
+    print(a, b)
+    result = []
+    if len(a) < len(b):
+        for i in range(len(b)):
+            temp1 = 'x' + str(i)
+            if temp1 in b:
+
+
+
+    elif len(a) == len(b):
+        for i in range(len(b)):
+
+    else:
+
+
+
+
+for_task5()
 
 # 5. Даны два файла, в каждом из которых находится запись многочлена.
 # Задача - сформировать файл, содержащий сумму многочленов.
@@ -217,3 +255,6 @@ for_task4()  # ещё нужно записать в файл
 #         print(data[i] + 1)
 
 # >>>>>>>>> open('file.txt', 'w', encoding='utf-8') cp1251
+
+
+# lets_go()
