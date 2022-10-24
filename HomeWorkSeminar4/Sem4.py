@@ -66,6 +66,7 @@ def enter_list(message):
     user_list = input(message).split()
     return user_list
 
+
 # 1. Вычислить число Пи c заданной точностью d
 # Пример:
 # при d = 0.001, π = 3.141
@@ -82,7 +83,7 @@ def for_task1():
     temp = 5
     pi_math = math.pi
     for i in range(1000000):  # тут можно увеличить точность числа Пи, но будет дольше считать
-        my_pi += (4/temp)
+        my_pi += (4 / temp)
         temp += 2
         my_pi -= (4 / temp)
         temp += 2
@@ -95,6 +96,22 @@ def for_task1():
 # составит список простых множителей числа N.
 
 
+def for_task2():
+    user_num = int(enter_number('Введите натуральное число:\n-->'))
+    i = 2
+    result = []
+    temp = user_num
+    while i <= temp:
+        if temp % i == 0:
+            result.append(i)
+            temp //= i
+            i = 2
+        else:
+            i += 1
+    print(f"Список простых множителей числа {user_num}:")
+    print(*result)
+
+
 # 3. Задайте последовательность цифр. Напишите программу, которая выведет список неповторяющихся элементов
 # исходной последовательности.
 # Пример:
@@ -103,24 +120,66 @@ def for_task1():
 # 1115566773322 -> []
 
 
-def for_task4():
-    new_list = [rand_num() for i in range(1, 7)]
-    print(new_list)
-
-
-for_task4()
+def for_task3():
+    print(f"Случайная последовательность цифр:")
+    new_list = [rand_num(1, 10) for i in range(1, 10)]
+    print(*new_list)
+    result = []
+    for i in range(len(new_list)):
+        cnt = new_list.count(new_list[i])
+        if cnt == 1:
+            result.append(new_list[i])
+        else:
+            continue
+    print(f"\nНеповторяющиеся элементы:")
+    print(*result)
 
 
 # 4. Задана натуральная степень k. Сформировать случайным образом список коэффициентов (значения от -100 до 100)
-# многочлена и записать в файл многочлен степени k
+# многочлена и записать в файл многочлен степени k.
 # k - максимальная степень многочлена, следующий степень следующего на 1 меньше и так до ноля
-# Коэффициенты расставляет random, поэтому при коэффициенте 0 просто пропускаем данную итерацию степени
+# Коэффициенты расставляет random, поэтому при коэффициенте 0 просто пропускаем данную итерацию степени.
 # Записываем результат в файл.
 #
 # Пример:
 # k=2 -> 2x² + 4x + 5 = 0 или x² + 5 = 0 или 10x² = 0
 # k=5 -> 3x⁵ + 5x⁴ - 6x³ - 3x = 0
 
+
+def for_task4():
+    user_num = int(enter_number("Введите максимальную степень многочлена (от 1 до 10):\nk="))
+
+    if user_num < 1 or user_num > 10:
+        print("Не вводите степень больше 10 или меньше 1, пробуем ещё раз...")
+        return for_task4()
+
+    result = []
+    result2 = ""
+
+    while user_num != 0:
+        num = rand_num()
+        if user_num == 1:
+            temp = "%dx + " % num
+            result.append(temp)
+        elif num == 1:
+            temp = "x^%d + " % user_num
+            result.append(temp)
+        elif num != 0:
+            temp = "%dx^%d + " % (num, user_num)
+            result.append(temp)
+        else:
+            continue
+        user_num -= 1
+
+    for i in range(len(result)):
+        result2 += str(result[i])
+    result2 = result2[:-2]
+    result2 += '= 0'
+
+    print(result2)
+
+
+for_task4()  # ещё нужно записать в файл
 
 # 5. Даны два файла, в каждом из которых находится запись многочлена.
 # Задача - сформировать файл, содержащий сумму многочленов.
