@@ -23,11 +23,11 @@ def lets_go():
             for_task3()
 
         elif int(num) == 4:
-            print("4. Задана натуральная степень k. Сформировать случайным образом список коэффициентов"
-                  "(значения от -100 до 100) многочлена и записать в файл многочлен степени k "
-                  "k - максимальная степень многочлена, следующий степень следующего на 1 меньше и так до ноля. "
-                  "Коэффициенты расставляет random, поэтому при коэффициенте 0 "
-                  "просто пропускаем данную итерацию степени. Записываем результат в файл.")
+            print("4. Задана натуральная степень k. Сформировать случайным образом список коэффициентов\n"
+                  "(значения от -100 до 100) многочлена и записать в файл многочлен степени k \n"
+                  "k - максимальная степень многочлена, следующий степень следующего на 1 меньше и так до ноля. \n"
+                  "Коэффициенты расставляет random, поэтому при коэффициенте 0 \n"
+                  "просто пропускаем данную итерацию степени. Записываем результат в файл.\n")
             # for_task4()
             write_in('file1.txt', for_task4())
             write_in('file2.txt', for_task4())
@@ -40,8 +40,16 @@ def lets_go():
 
         elif int(num) == 0:
             print("\nАнекдот напоследок: \n\n"
-                  "1 монитор — обычный программист, 2 монитора — продвинутый программист, \n"
-                  "3 монитора — системный программист, 4 монитора — охранник.\n")
+                  "Гаишник останавливает нарушителя за превышение скорости. Проверил его права, \n"
+                  "стpaховку и выписал парню штраф. Ну, парнишка, весь такой расстроенный, спрашивает у\n"
+                  "полицейского: \n"
+                  "- Товарищ лейтенант, вы не возражаете, если я вам задам вопрос?\n"
+                  "- Задавайте.\n"
+                  "- Вот посмотрите на все эти машины, которые мимо нас проезжают. Ведь как минимум 75%\n"
+                  "  из них превышают скорость. А вы остановили именно меня? Почему?\n"
+                  "- Вы когда нибудь были на рыбалке?\n"
+                  "- Да.\n"
+                  "- Вы всех рыб выловили?..\n")
 
             break
 
@@ -92,15 +100,16 @@ def read_in(file):
 
 
 def for_task1():
-    d = len(enter_number("Введите нужную точность:\nd = _"))
+    d = len(enter_number("Введите нужную точность:\nd = "))
     my_pi = (4 / 1) - (4 / 3)
     temp = 5
     pi_math = math.pi
-    for i in range(1000000):  # тут можно увеличить точность числа Пи, но будет дольше считать
+    for i in range(d**10):  # тут можно увеличить точность числа Пи, но будет дольше считать
         my_pi += (4 / temp)
         temp += 2
         my_pi -= (4 / temp)
         temp += 2
+
     print(f'Пи полученная с помощью библиотеки math --> {pi_math}')
     print(f'Пи которую мы вычислили --> {my_pi}')
     print(f'Уточненное число --> {str(my_pi)[:d]}')
@@ -136,15 +145,16 @@ def for_task2():
 
 def for_task3():
     print(f"Случайная последовательность цифр:")
-    new_list = [rand_num(1, 10) for i in range(1, 10)]
+    new_list = [rand_num(1, 10) for i in range(1, 20)]
     print(*new_list)
-    result = []
-    for i in range(len(new_list)):
-        cnt = new_list.count(new_list[i])
-        if cnt == 1:
-            result.append(new_list[i])
-        else:
-            continue
+    result = list(filter(lambda n: new_list.count(n) == 1, new_list))  # в Дискорде сократили моё решение
+
+    # for i in range(len(new_list)):
+    #     cnt = new_list.count(new_list[i])
+    #     if cnt == 1:
+    #         result.append(new_list[i])
+    #     else:
+    #         continue
     print(f"\nНеповторяющиеся элементы:")
     print(*result)
 
@@ -195,30 +205,6 @@ def for_task4():
     return result2
 
 
-def for_task5():
-    many_xy1 = read_in("file1.txt")
-    many_xy2 = read_in("file2.txt")
-    a = many_xy1[:-3].replace(" ", "").replace("^", "").split("+")
-    b = many_xy2[:-3].replace(" ", "").replace("^", "").split("+")
-    print(a, b)
-    result = []
-    if len(a) < len(b):
-        for i in range(len(b)):
-            temp1 = 'x' + str(i)
-            if temp1 in b:
-
-
-
-    elif len(a) == len(b):
-        for i in range(len(b)):
-
-    else:
-
-
-
-
-for_task5()
-
 # 5. Даны два файла, в каждом из которых находится запись многочлена.
 # Задача - сформировать файл, содержащий сумму многочленов.
 #
@@ -230,31 +216,51 @@ for_task5()
 # 40x⁹ - x⁸ -5x⁷ + 15x⁶ +5x⁴ + 5x³ + x² - 13x + 53 = 0
 
 
+def for_task5():
+    many_xy1 = str_in_dict(read_in("file1.txt"))
+    many_xy2 = str_in_dict(read_in("file2.txt"))
+
+    if len(many_xy2) >= len(many_xy1):
+        for e in many_xy1.keys():
+            many_xy2[e] = int(many_xy2.get(e, 0)) + int(many_xy1[e])
+        sum_dict = dict_in_str(many_xy2)
+
+    else:
+        for e in many_xy2.keys():
+            many_xy1[e] = int(many_xy1.get(e, 0)) + int(many_xy2[e])
+        sum_dict = dict_in_str(many_xy1)
+
+    print(f'\nМногочлен из первого файла:\n{read_in("file1.txt")}')
+    print(f'\nМногочлен из второго файла:\n{read_in("file2.txt")}')
+    print(f'\nСумма многочленов:\n{sum_dict}')
+    write_in('file3.txt', sum_dict)
 
 
-# В конец генератора можно добавлять конструкцию if. Например, надо из строки извлечь все цифры:
-#
-# >>> a = "lsj94ksd231 9"
-# >>> b = [int(i) for i in a if '0'<=i<='9']
-# >>> b
-# [9, 4, 2, 3, 1, 9]
+def dict_in_str(dict1):
+    result = ''
+    for i in dict1:
+        temp = f'{dict1[i]}x^{i} + '
+        result += temp
 
-# 1)
-# path = "sem5.txt"
-# f = open(path, "r")
-# data = f.read().split()
-# print(*data)
-# f.close()
-
-# data = list(map(int, data))
-# print(data)
-# for i in range(len(data) - 1):
-#     if data[i] + 1 == data[i + 1]:
-#         continue
-#     else:
-#         print(data[i] + 1)
-
-# >>>>>>>>> open('file.txt', 'w', encoding='utf-8') cp1251
+    result = result[:-5].replace('+ -', '- ')
+    result += ' = 0'
+    return result
 
 
-# lets_go()
+def str_in_dict(str1):
+
+    str2 = str1[:-3].replace(" ", "").replace("^", "").split("+")
+
+    dict1 = {}
+    for i in range(len(str2)):
+        temp = str2[i].split('x')
+        if temp[1] == '':
+            temp[1] = 1
+        elif temp[1] == '-':
+            temp[1] = -1
+        dict1[temp[1]] = temp[0]
+
+    return dict1
+
+
+lets_go()
