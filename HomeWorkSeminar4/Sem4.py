@@ -191,9 +191,29 @@ for_task4()  # ещё нужно записать в файл
 # Результат:
 # 40x⁹ - x⁸ -5x⁷ + 15x⁶ +5x⁴ + 5x³ + x² - 13x + 53 = 0
 
+
+
+
 # В конец генератора можно добавлять конструкцию if. Например, надо из строки извлечь все цифры:
 #
 # >>> a = "lsj94ksd231 9"
 # >>> b = [int(i) for i in a if '0'<=i<='9']
 # >>> b
 # [9, 4, 2, 3, 1, 9]
+
+# 1)
+# path = "sem5.txt"
+# f = open(path, "r")
+# data = f.read().split()
+# print(*data)
+# f.close()
+
+# data = list(map(int, data))
+# print(data)
+# for i in range(len(data) - 1):
+#     if data[i] + 1 == data[i + 1]:
+#         continue
+#     else:
+#         print(data[i] + 1)
+
+# >>>>>>>>> open('file.txt', 'w', encoding='utf-8') cp1251
