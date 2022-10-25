@@ -9,7 +9,7 @@ def lets_go():
               "\nДля выхода введите 0")
         num = enter_number("> ")
         if int(num) == 1:
-            print("1. Напишите программу, удаляющую из текста все слова, содержащие ""абв"".\n")
+            print("1. Напишите программу, удаляющую из текста все слова, содержащие ""абв""")
             for_task1()
 
         elif int(num) == 2:
@@ -87,8 +87,18 @@ def read_in(file):
 
 # 1. Напишите программу, удаляющую из текста все слова, содержащие ""абв"".
 
-def for_task1():
-    a = 0
+def for_task1(text="абв Ура, питон крутой абвязык , очень интересные семинарабвы ДЗ! абв"):
+    print("<<<(введите строку для проверки либо нажмите Enter, если не хотите)>>>")
+    user_choice = input("-->")
+    if user_choice == "":
+        user_choice = text
+        print("Тогда используем эту строку для проверки:\n"
+              "абв Ура, питон крутой абвязык , очень интересные семинарабвы ДЗ! абв\n")
+
+    lst = ' '.join(list(filter(lambda s: 'абв' not in s, user_choice.split())))
+    print(f"Результат:\n{lst}\n")
+    return lst
+
 
 
 # 2. Создайте программу для игры с конфетами человек против человека.
@@ -104,31 +114,92 @@ def for_task1():
 
 def player_turn(player=1, count=1):
     if player == 1:
-        print("Ходит первый игрок...")
+        print("\nХодит первый игрок...")
     else:
-        print("Ходит второй игрок...")
+        print("\nХодит второй игрок...")
     how_many = int(ff.enter_number("Сколько конфет возьмёте?-->"))
+
     if 0 < how_many <= 28:
         count -= how_many
-        print(f"Осталось {count} конфет")
-        return count
-    else:
-        print("Можно взять только от 1 до 28 конфет")
-        player_turn()
+        if count > 0:
+            print(f"Осталось {count} ")
+        else:
+            end = f"Конфет больше нет" if count == 0 else f"Осталось только {count+how_many} конфет и всё же..."
+            print(end)
 
+    else:
+        print("\nМожно взять только от 1 до 28 конфет")
+
+        player_turn(player, count)
+    return int(count)
+
+
+def bot_calc(player=1, count=1):
+    if player == 1:
+        print("\nХодит первый игрок...")
+        how_many = int(ff.enter_number("Сколько конфет возьмёте?-->"))
+
+    else:
+        print("\nХодит ИИ...")
+
+        if (count - 28) < 0:
+            how_many = count
+            print(f"ИИ ,берет {how_many} ...")
+        else:
+            how_many = count % 29
+            print(f"ИИ ,берет {how_many} ...")
+
+    if 0 < how_many <= 28:
+        count -= how_many
+        if count > 0:
+            print(f"Осталось {count} ")
+        else:
+            end = f"Конфет больше нет" if count == 0 else f"Осталось только {count + how_many} и всё же..."
+            print(end)
+
+    else:
+        print("\nМожно взять только от 1 до 28 конфет")
+
+        player_turn(player, count)
+    return int(count)
 
 
 def for_task2():
-    candies = int(ff.enter_number("Сколько конфет будем разыгрывать?\nВведите количество-->\n"))
+    bot_or_not = int(ff.enter_number("Играем с ИИ или живым существом?\n"
+                                     "если с ИИ введите 0\n-->"))
+    win1 = "\nВыиграл первый игрок и он получает все конфеты!!!"
+    win2 = "\nВыиграл второй игрок и он получает все конфеты!!!"
     rand_move = int(ff.rand_num(1, 3))
     move = rand_move
-    while candies > 0:
-        candies = player_turn(1, candies) if move == 1 else player_turn(2, candies)
-        move := 2 if move == 1 else move = 1
 
+    if bot_or_not != 0:
+        candies = int(ff.enter_number("Сколько конфет будем разыгрывать?\nВведите количество-->"))
 
-for_task2()
-
+        while int(candies) > 0:
+            candies = player_turn(1, candies) if move == 1 else player_turn(2, candies)
+            if move == 1:
+                move += 1
+            else:
+                move = 1
+        if move == 1:
+            print(win2)
+        else:
+            print(win1)
+    else:
+        print("По условию задачи всего конфет должно быть 2021 штука.\n"
+              "но чтобы не слишком долго мучиться, я предлагаю ввести количество вручную))")
+        candies = int(ff.enter_number("Сколько конфет будем разыгрывать?\nВведите количество-->"))
+        # candies = 2021
+        while candies > 0:
+            candies = bot_calc(1, candies) if move == 1 else bot_calc(2, candies)
+            if move == 1:
+                move += 1
+            else:
+                move = 1
+        if move == 1:
+            print(win2)
+        else:
+            print(win1)
 
 
 # 3. Создайте программу для игры в ""Крестики-нолики"".
@@ -144,4 +215,5 @@ def for_task3():
 def for_task4():
     a = 0
 
-# lets_go()
+
+lets_go()
