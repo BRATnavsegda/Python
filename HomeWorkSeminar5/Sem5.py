@@ -126,6 +126,7 @@ def for_task2():
         candies = player_turn(1, candies) if move == 1 else player_turn(2, candies)
         move := 2 if move == 1 else move = 1
 
+
 for_task2()
 
 
