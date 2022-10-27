@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="changed1.5.0 homework 4 21.10.22">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_19_19__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_10_2022_19_19__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2022_9_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2022_9_04__Changes_.xml" afterDir="false" />
+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="homework sem5 1.2.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py" afterDir="false" />
     </list>
@@ -278,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666572056989</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="homework sem5 1.2.0">
+      <created>1666736746653</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666736746653</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,7 +310,31 @@
     <MESSAGE value="changed1.1.0 homework 3 18.10.22" />
     <MESSAGE value="end homework sem3 1.0.0" />
     <MESSAGE value="homework sem4 1.4.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework sem4 1.4.0" />
+    <MESSAGE value="homework sem5 1.2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework sem5 1.2.0" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py</url>
+          <line>180</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py</url>
+          <line>177</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,11 +1,13 @@
 import random
 import math
+from typing import List
+
 import function_file as ff
 
 
 def lets_go():
     while True:
-        print("\n<<<Введите номер задачи от 1 до 5 для проверки.>>>\n"
+        print("\n<<<Введите номер задачи от 1 до 4 для проверки.>>>\n"
               "\nДля выхода введите 0")
         num = enter_number("> ")
         if int(num) == 1:
@@ -53,38 +55,6 @@ def lets_go():
             print("Введите !правильный! номер (от 1 до 5), попробуйте ещё раз...")
 
 
-def rand_num(start=-100, finish=100):
-    num = random.randint(start, finish)
-    return num
-
-
-def enter_number(message):
-    number = input(message)
-    try:
-        float(number)
-
-    except ValueError:
-        print("Введите число, попробуйте ещё раз!")
-        return enter_number(message)
-    return number
-
-
-def enter_list(message):
-    user_list = input(message).split()
-    return user_list
-
-
-def write_in(file, inp_data):
-    with open(file, 'w') as data:
-        data.write(inp_data)
-
-
-def read_in(file):
-    with open(file, 'r') as data:
-        r = data.read()
-        return r
-
-
 # 1. Напишите программу, удаляющую из текста все слова, содержащие ""абв"".
 
 def for_task1(text="абв Ура, питон крутой абвязык , очень интересные семинарабвы ДЗ! абв"):
@@ -98,7 +68,6 @@ def for_task1(text="абв Ура, питон крутой абвязык , оч
     lst = ' '.join(list(filter(lambda s: 'абв' not in s, user_choice.split())))
     print(f"Результат:\n{lst}\n")
     return lst
-
 
 
 # 2. Создайте программу для игры с конфетами человек против человека.
@@ -124,7 +93,7 @@ def player_turn(player=1, count=1):
         if count > 0:
             print(f"Осталось {count} ")
         else:
-            end = f"Конфет больше нет" if count == 0 else f"Осталось только {count+how_many} конфет и всё же..."
+            end = f"Конфет больше нет" if count == 0 else f"Осталось только {count + how_many} конфет и всё же..."
             print(end)
 
     else:
@@ -203,9 +172,125 @@ def for_task2():
 
 
 # 3. Создайте программу для игры в ""Крестики-нолики"".
+def switch(player):
+    if player == 1:
+        player = 0
+        return player
+    else:
+        player = 1
+        return player
+
+
+
+def check_line(line1, line2, line3, player):
+
+    l: list[str] = ["x", "o"]
+    i = 1
+    print_lines(line1, line2, line3)
+    while i < 10:
+        turn = int(ff.enter_number(f"\nХодит игрок{player}.\n Введите число от 1 до 9: "))
+        while turn < 1 or turn > 9:
+            turn = int(ff.enter_number(f"\nХодит игрок{player}.\n Введите число от 1 до 9: "))
+
+        if turn == 1 and (line1[2] == "*"):
+            line1[2] = l[player]
+            get_winner(line1, line2, line3, player)
+            i += 1
+            player = switch(player)
+        elif turn == 2 and (line1[4] == "*"):
+            line1[4] = l[player]
+            get_winner(line1, line2, line3, player)
+            i += 1
+            player = switch(player)
+        elif turn == 3 and (line1[6] == "*"):
+            line1[6] = l[player]
+            get_winner(line1, line2, line3, player)
+            i += 1
+            player = switch(player)
+        elif turn == 4 and (line2[2] == "*"):
+            line2[2] = l[player]
+            get_winner(line1, line2, line3, player)
+            i += 1
+            player = switch(player)
+        elif (turn == 5) and (line2[4] == "*"):
+            line2[4] = l[player]
+            get_winner(line1, line2, line3, player)
+            i += 1
+            player = switch(player)
+        elif turn == 6 and (line2[6] == "*"):
+            line2[6] = l[player]
+            get_winner(line1, line2, line3, player)
+            i += 1
+            player = switch(player)
+        elif turn == 7 and (line3[2] == "*"):
+            line3[2] = l[player]
+            get_winner(line1, line2, line3, player)
+            i += 1
+            player = switch(player)
+        elif turn == 8 and (line3[4] == "*"):
+            line3[4] = l[player]
+            get_winner(line1, line2, line3, player)
+            i += 1
+            player = switch(player)
+        elif turn == 9 and (line3[6] == "*"):
+            line3[6] = l[player]
+            get_winner(line1, line2, line3, player)
+            i += 1
+            player = switch(player)
+        else:
+            print('\nСюда уже кто-то походил\nСделайте ход в другую клетку\n')
+
+        print_lines(line1, line2, line3)
+
+
+    return line1, line2, line3, player
+
+
+def get_winner(line1, line2, line3, player):
+    l: list[str] = ['x', 'o']
+
+    for symbol in l:
+        if ((line1[2] == symbol and line1[4] == symbol and line1[6] == symbol) or
+                (line2[2] == symbol and line2[4] == symbol and line2[6] == symbol) or
+                (line3[2] == symbol and line3[4] == symbol and line3[6] == symbol) or
+                (line1[2] == symbol and line2[2] == symbol and line3[2] == symbol) or
+                (line1[4] == symbol and line2[4] == symbol and line3[4] == symbol) or
+                (line1[6] == symbol and line2[6] == symbol and line3[6] == symbol) or
+                (line1[2] == symbol and line2[4] == symbol and line3[6] == symbol) or
+                (line1[6] == symbol and line2[4] == symbol and line3[2] == symbol)):
+            print_lines(line1, line2, line3)
+            print(f">>>>>>Выиграл игрок {player}<<<<<<")
+            exit()
+    if line1.count("*") != 0 and line2.count("*") != 0 and line3.count("*") != 0:
+        return line1, line2, line3, player
+    else:
+        print("Ничья, победила дружба.")
+
+
+def print_lines(line1, line2, line3):
+    up_line = list("~_______~")
+    down_line = list("~_______~")
+    print(*up_line)
+    print(*line1)
+    print(*line2)
+    print(*line3)
+    print(*down_line)
+
 
 def for_task3():
-    a = 0
+    player = int(ff.rand_num(0, 1))
+
+    midl_line1 = list("| * * * |")  # 2.4.6
+    midl_line2 = list("| * * * |")
+    midl_line3 = list("| * * * |")
+    check_line(midl_line1, midl_line2, midl_line3, player)
+
+
+
+
+
+
+for_task3()
 
 
 # 4. Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
@@ -215,5 +300,4 @@ def for_task3():
 def for_task4():
     a = 0
 
-
-lets_go()
+# lets_go()
