@@ -1,0 +1,898 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_18_47__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_18_47__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_18_47__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_18_47__Changes_.xml	(revision 703b723a223b646041b2af747a0d545f950023bc)
++++ /dev/null	(revision 703b723a223b646041b2af747a0d545f950023bc)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_20_10_2022_18_47_[Changes]" date="1666280884344" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_18_47_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 20.10.2022 18:47 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_19_10_2022_22_19_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_10_2022_22_19_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_10_2022_22_19_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_10_2022_22_19_[Changes]/shelved.patch	(revision 703b723a223b646041b2af747a0d545f950023bc)
++++ /dev/null	(revision 703b723a223b646041b2af747a0d545f950023bc)
+@@ -1,291 +0,0 @@
+-Index: file.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/file.py b/file.py
+-new file mode 100644
+---- /dev/null	(date 1666034002133)
+-+++ b/file.py	(date 1666034002133)
+-@@ -0,0 +1,14 @@
+-+def enter_number(message):
+-+    number = input(message)
+-+    try:
+-+        float(number)
+-+
+-+    except ValueError:
+-+        print("Please enter the number, try again!")
+-+        return enter_number(message)
+-+    return number
+-+
+-+
+-+def enter_list():
+-+    user_list = input("Enter your list, separate by space:\n>").split()
+-+    return user_list
+-\ No newline at end of file
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"ends homework 11.10.22\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/HomeWork11.10.22/main.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/HomeWork11.10.22/main.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"29fc8d00e8d53c40839f1f775f18742c0e4ad112\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RESET_MODE\" value=\"HARD\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Fz0NdK1KA0uIf3euYNMpWnXHcp\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;D:/777/старая винда/Мои документы/IT-обучение/Python&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Python.main (1)\">\r\n    <configuration name=\"Unnamed\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"C:\\Users\\TESO\\AppData\\Local\\Microsoft\\WindowsApps\\python3.10.exe\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork11.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork11.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork10.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork10.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Python.Unnamed\" />\r\n      <item itemvalue=\"Python.main (1)\" />\r\n      <item itemvalue=\"Python.main\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"\" />\r\n      <created>1665479568205</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1665479568205</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"finish homework\">\r\n      <created>1665520652815</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665520652815</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"finish homework1.0\">\r\n      <created>1665521443436</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665521443436</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"reload1.0\">\r\n      <created>1665924473714</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665924473714</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"reload1.01\">\r\n      <created>1665927111766</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665927111766</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"reload1.03\">\r\n      <created>1665928298305</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665928298305</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"ends homework 11.10.22\">\r\n      <created>1665932206495</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665932206495</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"ends homework 11.10.22\">\r\n      <created>1665932274475</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665932274475</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"finish homework\" />\r\n    <MESSAGE value=\"finish homework1.0\" />\r\n    <MESSAGE value=\"reload1.0\" />\r\n    <MESSAGE value=\"reload1.01\" />\r\n    <MESSAGE value=\"reload1.02\" />\r\n    <MESSAGE value=\"reload1.03\" />\r\n    <MESSAGE value=\"reload1.04\" />\r\n    <MESSAGE value=\"ends homework 11.10.22\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"ends homework 11.10.22\" />\r\n    <option name=\"GROUP_MULTIFILE_MERGE_BY_DIRECTORY\" value=\"true\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 0c07b1a6eef498ffcfe314a81c15711cefa3d74e)
+-+++ b/.idea/workspace.xml	(date 1666207143563)
+-@@ -1,10 +1,7 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-   <component name="ChangeListManager">
+--    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="ends homework 11.10.22">
+--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/HomeWork11.10.22/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork11.10.22/main.py" afterDir="false" />
+--    </list>
+-+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="mistakes fixes at homework 11.10.22" />
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -176,7 +173,14 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1665932274475</updated>
+-     </task>
+--    <option name="localTasksCounter" value="8" />
+-+    <task id="LOCAL-00008" summary="mistakes fixes at homework 11.10.22">
+-+      <created>1665945549652</created>
+-+      <option name="number" value="00008" />
+-+      <option name="presentableId" value="LOCAL-00008" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1665945549652</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="9" />
+-     <servers />
+-   </component>
+-   <component name="Vcs.Log.Tabs.Properties">
+-@@ -199,7 +203,8 @@
+-     <MESSAGE value="reload1.03" />
+-     <MESSAGE value="reload1.04" />
+-     <MESSAGE value="ends homework 11.10.22" />
+--    <option name="LAST_COMMIT_MESSAGE" value="ends homework 11.10.22" />
+-+    <MESSAGE value="mistakes fixes at homework 11.10.22" />
+-+    <option name="LAST_COMMIT_MESSAGE" value="mistakes fixes at homework 11.10.22" />
+-     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+-   </component>
+- </project>
+-\ No newline at end of file
+-Index: Lection2/lect.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/Lection2/lect.py b/Lection2/lect.py
+-new file mode 100644
+---- /dev/null	(date 1666036108352)
+-+++ b/Lection2/lect.py	(date 1666036108352)
+-@@ -0,0 +1,206 @@
+-+# 1 вариант
+-+# with open('file.txt', 'w') as data:
+-+#  data.write('line 1\n')
+-+#  data.write('line 2\n')
+-+
+-+# 2 вариант
+-+# colors = ['red', 'green', 'blue']
+-+# data = open('file.txt', 'a')
+-+# data.writelines(colors) # разделителей не будет
+-+# data.close()
+-+
+-+# 3 вариант
+-+# path = 'file.txt'
+-+# data = open(path, 'r')
+-+# for line in data:
+-+#     print(line)
+-+# data.close()
+-+
+-+import file
+-+import function_file as ff
+-+
+-+from turtle import clear
+-+clear
+-+
+-+print(file.enter_number("Hellowchiki"))
+-+
+-+
+-+# new file function_file.py
+-+def f(x):
+-+    if x == 1:
+-+        return 'Целое'
+-+    elif x == 2.3:
+-+        return 23
+-+    else:
+-+        return
+-+
+-+
+-+# file hello.py
+-+
+-+print(ff.f(1))  # Целое
+-+print(ff.f(2.3))  # 23
+-+print(ff.f(28))  # None
+-+
+-+
+-+# Функции
+-+
+-+def new_string(symbol, count):
+-+    return symbol * count
+-+
+-+
+-+print(new_string('!', 5))  # !!!!!
+-+print(new_string('!'))  # TypeError missing 1 required ...
+-+
+-+
+-+def new_string(symbol, count=3):
+-+    return symbol * count
+-+
+-+
+-+print(new_string('!', 5))  # !!!!!
+-+print(new_string('!'))  # !!!
+-+print(new_string(4))  # 12
+-+
+-+
+-+def concatenatio(*params):
+-+    res: str = ""
+-+    for item in params:
+-+        res += item
+-+    return res
+-+
+-+
+-+print(concatenatio('a', 's', 'd', 'w'))  # asdw
+-+print(concatenatio('a', '1', 'd', '2'))  # a1d2
+-+# print(conatenatio(1, 2, 3, 4)) # TypeError: ...
+-+
+-+# >>>>>Рекурсия!!
+-+
+-+
+-+def fib(n):
+-+    if n in [1, 2]:
+-+        return 1
+-+    else:
+-+        return fib(n-1) + fib(n-2)
+-+
+-+
+-+list = []
+-+for e in range(1, 10):
+-+    list.append(fib(e))
+-+print(list)  # 1 1 2 3 5 8 13 21 34
+-+
+-+
+-+# Кортежи
+-+
+-+t = ()
+-+print(type(t)) # tuple
+-+t = (1,)
+-+print(type(t)) # tuple
+-+t = (1)
+-+print(type(t)) # int
+-+t = (28, 9, 1990)
+-+print(type(t)) # tuple
+-+colors = ['red', 'green', 'blue']
+-+print(colors) # ['red', 'green', 'blue']
+-+t = tuple(colors)
+-+print(t) # ('red', 'green', 'blue')
+-+
+-+# Кортеж – это неизменяемый “список”
+-+
+-+# Кортежи
+-+
+-+t = tuple(['red', 'green', 'blue'])
+-+print(t[0]) # red
+-+print(t[2]) # blue
+-+# print(t[10]) # IndexError: tuple index out of range
+-+print(t[-2]) # green
+-+# print(t[-200]) # IndexError: tuple index out of range
+-+for e in t:
+-+ print(e) # red green blue
+-+t[0] = 'black' # TypeError: 'tuple' object does not support item assignment
+-+
+-+# Кортежи
+-+
+-+t = tuple(['red', 'green', 'blue'])
+-+red, green, blue = t
+-+print('r:{} g:{} b:{}'.format(red, green, blue))
+-+# r:red g:green b:blue
+-+
+-+
+-+# Словари
+-+dictionary = {}
+-+dictionary = \
+-+ {
+-+ 'up': '↑',
+-+ 'left': '←',
+-+ 'down': '↓',
+-+ 'right': '→'
+-+ }
+-+print(dictionary) # {'up':'↑', 'left':'←', 'down':'↓', 'right':'→'}
+-+print(dictionary['left']) # ←
+-+# типы ключей могут отличаться
+-+
+-+
+-+# Неупорядоченные коллекции произвольных
+-+# объектов с доступом по ключу
+-+# Словари
+-+print(dictionary['up']) # ↑
+-+# типы ключей могут отличаться
+-+dictionary['left'] = '⇐'
+-+print(dictionary['left']) # ⇐
+-+#print(dictionary['type']) # KeyError: 'type'
+-+del dictionary['left'] # удаление элемента
+-+for item in dictionary: # for (k,v) in dictionary.items():
+-+ print('{}: {}'.format(item, dictionary[item]))
+-+# up: ↑
+-+# down: ↓
+-+# right: →
+-+
+-+
+-+# Множества
+-+# Неупорядоченная совокупность элементов
+-+a = {1, 2, 3, 5, 8}
+-+b = {'2', '5', 8, 13, 21}
+-+print(type(a)) # set
+-+print(type(b)) # set
+-+
+-+# Множества
+-+a = {1, 2, 3, 5, 8}
+-+b = set([2, 5, 8, 13, 21])
+-+c = set((2, 5, 8, 13, 21))
+-+print(type(a)) # set
+-+print(type(b)) # set
+-+print(type(c)) # set
+-+a = {1, 1, 1, 1, 1}
+-+print(a) # {1}
+-+
+-+# Множества
+-+colors = {'red', 'green', 'blue'}
+-+print(colors) # {'red', 'green', 'blue'}
+-+colors.add('red')
+-+print(colors) # {'red', 'green', 'blue'}
+-+colors.add('gray')
+-+print(colors) # {'red', 'green', 'blue','gray'}
+-+colors.remove('red')
+-+print(colors) # {'green', 'blue','gray'}
+-+# colors.remove('red') # KeyError: 'red'
+-+colors.discard('red') # ok
+-+print(colors) # {'green', 'blue','gray'}
+-+colors.clear() # { }
+-+print(colors) # set()
+-+
+-+# Множества
+-+a = {1, 2, 3, 5, 8}
+-+b = {2, 5, 8, 13, 21}
+-+c = a.copy() # c = {1, 2, 3, 5, 8}
+-+u = a.union(b) # u = {1, 2, 3, 5, 8, 13, 21}
+-+i = a.intersection(b) # i = {8, 2, 5}
+-+dl = a.difference(b) # dl = {1, 3}
+-+dr = b.difference(a) # dr = {13, 21}
+-+q = a \
+-+ .union(b) \
+-+ .difference(a.intersection(b))
+-+# {1, 21, 3, 13}
+-+
+-+# Множества
+-+a = {1, 2, 3, 5, 8}
+-+b = frozenset(a)
+-+print(b) # frozenset({1, 2, 3, 5, 8})
+-\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_10_08__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_10_08__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_10_08__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_10_08__Changes_.xml	(revision 703b723a223b646041b2af747a0d545f950023bc)
++++ /dev/null	(revision 703b723a223b646041b2af747a0d545f950023bc)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_20_10_2022_10_08_[Changes]" date="1666249747025" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_10_08_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 20.10.2022 10:08 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_19_10_2022_22_20_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2022_22_20_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2022_22_20_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2022_22_20_[Changes]/shelved.patch	(revision 703b723a223b646041b2af747a0d545f950023bc)
++++ /dev/null	(revision 703b723a223b646041b2af747a0d545f950023bc)
+@@ -1,336 +0,0 @@
+-Index: Lection2/lect.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/Lection2/lect.py b/Lection2/lect.py
+-new file mode 100644
+---- /dev/null	(date 1666207207967)
+-+++ b/Lection2/lect.py	(date 1666207207967)
+-@@ -0,0 +1,206 @@
+-+# 1 вариант
+-+# with open('file.txt', 'w') as data:
+-+#  data.write('line 1\n')
+-+#  data.write('line 2\n')
+-+
+-+# 2 вариант
+-+# colors = ['red', 'green', 'blue']
+-+# data = open('file.txt', 'a')
+-+# data.writelines(colors) # разделителей не будет
+-+# data.close()
+-+
+-+# 3 вариант
+-+# path = 'file.txt'
+-+# data = open(path, 'r')
+-+# for line in data:
+-+#     print(line)
+-+# data.close()
+-+
+-+import file
+-+import function_file as ff
+-+
+-+from turtle import clear
+-+clear
+-+
+-+print(file.enter_number("Hellowchiki"))
+-+
+-+
+-+# new file function_file.py
+-+def f(x):
+-+    if x == 1:
+-+        return 'Целое'
+-+    elif x == 2.3:
+-+        return 23
+-+    else:
+-+        return
+-+
+-+
+-+# file hello.py
+-+
+-+print(ff.f(1))  # Целое
+-+print(ff.f(2.3))  # 23
+-+print(ff.f(28))  # None
+-+
+-+
+-+# Функции
+-+
+-+def new_string(symbol, count):
+-+    return symbol * count
+-+
+-+
+-+print(new_string('!', 5))  # !!!!!
+-+print(new_string('!'))  # TypeError missing 1 required ...
+-+
+-+
+-+def new_string(symbol, count=3):
+-+    return symbol * count
+-+
+-+
+-+print(new_string('!', 5))  # !!!!!
+-+print(new_string('!'))  # !!!
+-+print(new_string(4))  # 12
+-+
+-+
+-+def concatenatio(*params):
+-+    res: str = ""
+-+    for item in params:
+-+        res += item
+-+    return res
+-+
+-+
+-+print(concatenatio('a', 's', 'd', 'w'))  # asdw
+-+print(concatenatio('a', '1', 'd', '2'))  # a1d2
+-+# print(conatenatio(1, 2, 3, 4)) # TypeError: ...
+-+
+-+# >>>>>Рекурсия!!
+-+
+-+
+-+def fib(n):
+-+    if n in [1, 2]:
+-+        return 1
+-+    else:
+-+        return fib(n-1) + fib(n-2)
+-+
+-+
+-+list = []
+-+for e in range(1, 10):
+-+    list.append(fib(e))
+-+print(list)  # 1 1 2 3 5 8 13 21 34
+-+
+-+
+-+# Кортежи
+-+
+-+t = ()
+-+print(type(t)) # tuple
+-+t = (1,)
+-+print(type(t)) # tuple
+-+t = (1)
+-+print(type(t)) # int
+-+t = (28, 9, 1990)
+-+print(type(t)) # tuple
+-+colors = ['red', 'green', 'blue']
+-+print(colors) # ['red', 'green', 'blue']
+-+t = tuple(colors)
+-+print(t) # ('red', 'green', 'blue')
+-+
+-+# Кортеж – это неизменяемый “список”
+-+
+-+# Кортежи
+-+
+-+t = tuple(['red', 'green', 'blue'])
+-+print(t[0]) # red
+-+print(t[2]) # blue
+-+# print(t[10]) # IndexError: tuple index out of range
+-+print(t[-2]) # green
+-+# print(t[-200]) # IndexError: tuple index out of range
+-+for e in t:
+-+ print(e) # red green blue
+-+t[0] = 'black' # TypeError: 'tuple' object does not support item assignment
+-+
+-+# Кортежи
+-+
+-+t = tuple(['red', 'green', 'blue'])
+-+red, green, blue = t
+-+print('r:{} g:{} b:{}'.format(red, green, blue))
+-+# r:red g:green b:blue
+-+
+-+
+-+# Словари
+-+dictionary = {}
+-+dictionary = \
+-+ {
+-+ 'up': '↑',
+-+ 'left': '←',
+-+ 'down': '↓',
+-+ 'right': '→'
+-+ }
+-+print(dictionary) # {'up':'↑', 'left':'←', 'down':'↓', 'right':'→'}
+-+print(dictionary['left']) # ←
+-+# типы ключей могут отличаться
+-+
+-+
+-+# Неупорядоченные коллекции произвольных
+-+# объектов с доступом по ключу
+-+# Словари
+-+print(dictionary['up']) # ↑
+-+# типы ключей могут отличаться
+-+dictionary['left'] = '⇐'
+-+print(dictionary['left']) # ⇐
+-+#print(dictionary['type']) # KeyError: 'type'
+-+del dictionary['left'] # удаление элемента
+-+for item in dictionary: # for (k,v) in dictionary.items():
+-+ print('{}: {}'.format(item, dictionary[item]))
+-+# up: ↑
+-+# down: ↓
+-+# right: →
+-+
+-+
+-+# Множества
+-+# Неупорядоченная совокупность элементов
+-+a = {1, 2, 3, 5, 8}
+-+b = {'2', '5', 8, 13, 21}
+-+print(type(a)) # set
+-+print(type(b)) # set
+-+
+-+# Множества
+-+a = {1, 2, 3, 5, 8}
+-+b = set([2, 5, 8, 13, 21])
+-+c = set((2, 5, 8, 13, 21))
+-+print(type(a)) # set
+-+print(type(b)) # set
+-+print(type(c)) # set
+-+a = {1, 1, 1, 1, 1}
+-+print(a) # {1}
+-+
+-+# Множества
+-+colors = {'red', 'green', 'blue'}
+-+print(colors) # {'red', 'green', 'blue'}
+-+colors.add('red')
+-+print(colors) # {'red', 'green', 'blue'}
+-+colors.add('gray')
+-+print(colors) # {'red', 'green', 'blue','gray'}
+-+colors.remove('red')
+-+print(colors) # {'green', 'blue','gray'}
+-+# colors.remove('red') # KeyError: 'red'
+-+colors.discard('red') # ok
+-+print(colors) # {'green', 'blue','gray'}
+-+colors.clear() # { }
+-+print(colors) # set()
+-+
+-+# Множества
+-+a = {1, 2, 3, 5, 8}
+-+b = {2, 5, 8, 13, 21}
+-+c = a.copy() # c = {1, 2, 3, 5, 8}
+-+u = a.union(b) # u = {1, 2, 3, 5, 8, 13, 21}
+-+i = a.intersection(b) # i = {8, 2, 5}
+-+dl = a.difference(b) # dl = {1, 3}
+-+dr = b.difference(a) # dr = {13, 21}
+-+q = a \
+-+ .union(b) \
+-+ .difference(a.intersection(b))
+-+# {1, 21, 3, 13}
+-+
+-+# Множества
+-+a = {1, 2, 3, 5, 8}
+-+b = frozenset(a)
+-+print(b) # frozenset({1, 2, 3, 5, 8})
+-\ No newline at end of file
+-Index: file.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/file.py b/file.py
+-new file mode 100644
+---- /dev/null	(date 1666207176865)
+-+++ b/file.py	(date 1666207176865)
+-@@ -0,0 +1,14 @@
+-+def enter_number(message):
+-+    number = input(message)
+-+    try:
+-+        float(number)
+-+
+-+    except ValueError:
+-+        print("Please enter the number, try again!")
+-+        return enter_number(message)
+-+    return number
+-+
+-+
+-+def enter_list():
+-+    user_list = input("Enter your list, separate by space:\n>").split()
+-+    return user_list
+-\ No newline at end of file
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"reload1.0\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/HomeWork11.10.22/main (1).py\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/HomeWork11.10.22/main.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/HomeWork11.10.22/main.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Fz0NdK1KA0uIf3euYNMpWnXHcp\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;D:/777/старая винда/Мои документы/IT-обучение/Python&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Python.main (1)\">\r\n    <configuration name=\"Unnamed\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"C:\\Users\\TESO\\AppData\\Local\\Microsoft\\WindowsApps\\python3.10.exe\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork11.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork11.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork10.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork10.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Python.Unnamed\" />\r\n      <item itemvalue=\"Python.main (1)\" />\r\n      <item itemvalue=\"Python.main\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"\" />\r\n      <created>1665479568205</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1665479568205</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"finish homework\">\r\n      <created>1665520652815</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665520652815</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"finish homework1.0\">\r\n      <created>1665521443436</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665521443436</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"reload1.0\">\r\n      <created>1665924473714</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665924473714</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"finish homework\" />\r\n    <MESSAGE value=\"finish homework1.0\" />\r\n    <MESSAGE value=\"reload1.0\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"reload1.0\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision abb39fa317cf6a3705b623114c109f3c236f8f6d)
+-+++ b/.idea/workspace.xml	(date 1666207177771)
+-@@ -1,9 +1,8 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-   <component name="ChangeListManager">
+--    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="reload1.0">
+-+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="ends homework 11.10.22">
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/HomeWork11.10.22/main (1).py" beforeDir="false" />
+-       <change beforePath="$PROJECT_DIR$/HomeWork11.10.22/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWork11.10.22/main.py" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-@@ -12,12 +11,19 @@
+-     <option name="LAST_RESOLUTION" value="IGNORE" />
+-   </component>
+-   <component name="Git.Settings">
+-+    <option name="PUSH_TAGS">
+-+      <GitPushTagMode>
+-+        <option name="argument" value="--tags" />
+-+        <option name="title" value="All" />
+-+      </GitPushTagMode>
+-+    </option>
+-     <option name="RECENT_BRANCH_BY_REPOSITORY">
+-       <map>
+--        <entry key="$PROJECT_DIR$" value="main" />
+-+        <entry key="$PROJECT_DIR$" value="29fc8d00e8d53c40839f1f775f18742c0e4ad112" />
+-       </map>
+-     </option>
+-     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-+    <option name="RESET_MODE" value="HARD" />
+-   </component>
+-   <component name="MarkdownSettingsMigration">
+-     <option name="stateVersion" value="1" />
+-@@ -142,7 +148,35 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1665924473714</updated>
+-     </task>
+--    <option name="localTasksCounter" value="4" />
+-+    <task id="LOCAL-00004" summary="reload1.01">
+-+      <created>1665927111766</created>
+-+      <option name="number" value="00004" />
+-+      <option name="presentableId" value="LOCAL-00004" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1665927111766</updated>
+-+    </task>
+-+    <task id="LOCAL-00005" summary="reload1.03">
+-+      <created>1665928298305</created>
+-+      <option name="number" value="00005" />
+-+      <option name="presentableId" value="LOCAL-00005" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1665928298305</updated>
+-+    </task>
+-+    <task id="LOCAL-00006" summary="ends homework 11.10.22">
+-+      <created>1665932206495</created>
+-+      <option name="number" value="00006" />
+-+      <option name="presentableId" value="LOCAL-00006" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1665932206495</updated>
+-+    </task>
+-+    <task id="LOCAL-00007" summary="ends homework 11.10.22">
+-+      <created>1665932274475</created>
+-+      <option name="number" value="00007" />
+-+      <option name="presentableId" value="LOCAL-00007" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1665932274475</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="8" />
+-     <servers />
+-   </component>
+-   <component name="Vcs.Log.Tabs.Properties">
+-@@ -160,6 +194,12 @@
+-     <MESSAGE value="finish homework" />
+-     <MESSAGE value="finish homework1.0" />
+-     <MESSAGE value="reload1.0" />
+--    <option name="LAST_COMMIT_MESSAGE" value="reload1.0" />
+-+    <MESSAGE value="reload1.01" />
+-+    <MESSAGE value="reload1.02" />
+-+    <MESSAGE value="reload1.03" />
+-+    <MESSAGE value="reload1.04" />
+-+    <MESSAGE value="ends homework 11.10.22" />
+-+    <option name="LAST_COMMIT_MESSAGE" value="ends homework 11.10.22" />
+-+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+-   </component>
+- </project>
+-\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_10_08_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_10_08_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_10_08_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_10_08_[Changes]/shelved.patch	(revision 703b723a223b646041b2af747a0d545f950023bc)
++++ /dev/null	(revision 703b723a223b646041b2af747a0d545f950023bc)
+@@ -1,74 +0,0 @@
+-Index: HomeWorkSeminar3/Sem3.py
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>import random\r\n\r\n\r\ndef lets_go():\r\n    while True:\r\n        print(\"\\n<<<Введите номер задачи от 1 до 5 для проверки.>>>\\n\"\r\n              \"\\nДля выхода введите 0\")\r\n        num = enter_number(\"> \")\r\n        if int(num) == 1:\r\n            print(\"1. Задайте список из нескольких чисел.\\n\"\r\n                  \" Напишите программу, которая найдёт сумму элементов списка, стоящих на нечётной позиции.\")\r\n            for_task1()\r\n\r\n        elif int(num) == 2:\r\n            print(\"2. Напишите программу, которая найдёт произведение пар чисел списка. \\n\"\r\n                  \"Парой считаем первый и последний элемент, второй и предпоследний и т.д.\")\r\n            for_task2()\r\n\r\n        elif int(num) == 3:\r\n            print(\"3. Задайте список из вещественных чисел. \\n\"\r\n                  \"Напишите программу, которая найдёт разницу между \\n\"\r\n                  \"максимальным и минимальным значением дробной части элементов.\")\r\n\r\n        elif int(num) == 4:\r\n            print(\" 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.\")\r\n\r\n        elif int(num) == 5:\r\n            print(\"5. Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.\")\r\n\r\n        elif int(num) == 0:\r\n            print(\"\\nАнекдот напоследок: \\n\\n\"\r\n                  \"Instagram был заблокирован в России.\\n\"\r\n                  \"Количество пользователей из Нидерландов увеличилось на 59 млн.\\n\")\r\n            break\r\n\r\n        else:\r\n            print(\"Введите !правильный! номер (от 1 до 5), попробуйте ещё раз...\")\r\n\r\ndef rand_num(start = -100, finish = 100):\r\n    num = random.randint(start, finish)\r\n    return num\r\n\r\ndef enter_number(message):\r\n    number = input(message)\r\n    try:\r\n        float(number)\r\n\r\n    except ValueError:\r\n        print(\"Введите число, попробуйте ещё раз!\")\r\n        return enter_number(message)\r\n    return number\r\n\r\n\r\ndef enter_list(message):\r\n    user_list = input(message).split()\r\n    return user_list\r\n\r\n\r\n# 1. Задайте список из нескольких чисел. Напишите программу,\r\n# которая найдёт сумму элементов списка, стоящих на нечётной позиции.\r\n#\r\n# Пример:\r\n#\r\n# - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12\r\n\r\ndef for_task1():\r\n    user_list = []\r\n    rand = rand_num(5, 11)\r\n    for n in range(rand):\r\n        user_list.append(rand_num())\r\n    print(f'\\nЭто ваш список:\\n{user_list}')\r\n\r\n    i = 1\r\n    result = 0\r\n    print(\"На нечётных позициях находятся элементы: \", sep=\"\", end=\"\")\r\n    while i < len(user_list):\r\n        result += int(user_list[i])\r\n        print(f'-->{user_list[i]}', sep=\" \", end=\" \")\r\n        i += 2\r\n    print(f'\\nСуммой элементов стоящих на нечётных позициях вашего списка будет: {result}')\r\n\r\n\r\n# 2. Напишите программу, которая найдёт произведение пар чисел списка.\r\n# Парой считаем первый и последний элемент, второй и предпоследний и т.д.\r\n#\r\n# Пример:\r\n#\r\n# - [2, 3, 4, 5, 6] => [12, 15, 16];\r\n# - [2, 3, 5, 6] => [12, 15]\r\n\r\n\r\ndef for_task2():\r\n    user_list = []\r\n    rand = rand_num(4, 6)\r\n    for n in range(rand):\r\n        user_list.append(rand_num(-10, 10))\r\n    print(f'\\nЭто ваш список:\\n{user_list}')\r\n\r\n    pos_list = []\r\n    len_list = len(user_list)\r\n\r\n    if len_list % 2 == 0:\r\n        for i in range(int(len_list / 2)):\r\n            pos_list.append(user_list[i] * user_list[-i-1])\r\n\r\n    else:\r\n        for i in range(int(len_list / 2 + 1)):\r\n            pos_list.append(user_list[i] * user_list[-i-1])\r\n\r\n    print(f'\\nСписок произведений пар чисел:\\n{pos_list}')\r\n\r\n\r\n# 3. Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу\r\n# между максимальным и минимальным значением дробной части элементов.\r\n#\r\n# Пример:\r\n#\r\n# - [1.1, 1.2, 3.1, 5, 10.01] => 0.19        1.1 1.2 3.1 5 10.01\r\n\r\n\r\ndef for_task3():\r\n    user_list = [1.1, 1.2, 3.1, 5, 10.01]    # enter_list(\"Задайте список из нескольких вещественных чисел, разделённых пробелами:\\n>\")\r\n    min_el = max_el = 0.0\r\n    print(user_list)\r\n\r\n    for i in range(len(user_list)):\r\n        float(user_list[i])\r\n        user_list[i] %= 1\r\n        if user_list[i] > max_el:\r\n            max_el = user_list[i]\r\n        elif user_list[i] < min_el:\r\n            min_el = user_list[i]\r\n\r\n    result = int((max_el - min_el) * 100) / 100\r\n\r\n    print(result)\r\n\r\n\r\nfor_task3()\r\n\r\n\r\n# 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.\r\n#\r\n# Пример:\r\n#\r\n# - 45 -> 101101\r\n# - 3 -> 11\r\n# - 2 -> 10\r\n#\r\n#\r\n#\r\n# 5. Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.\r\n#\r\n# Пример:\r\n#\r\n# - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]\r\n# [Негафибоначчи]\r\n# (Fn = F(n+2)−F(n+1).\r\n# Они также могут быть определены по формуле F−n = (−1)n+1Fn..)\r\n\r\n\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/HomeWorkSeminar3/Sem3.py b/HomeWorkSeminar3/Sem3.py
+---- a/HomeWorkSeminar3/Sem3.py	(revision e4a05ebfad0b17edc0aadd7c8f3295af97b1ba35)
+-+++ b/HomeWorkSeminar3/Sem3.py	(date 1666191380972)
+-@@ -20,6 +20,7 @@
+-             print("3. Задайте список из вещественных чисел. \n"
+-                   "Напишите программу, которая найдёт разницу между \n"
+-                   "максимальным и минимальным значением дробной части элементов.")
+-+            for_task3()
+- 
+-         elif int(num) == 4:
+-             print(" 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.")
+-@@ -136,7 +137,7 @@
+-     print(result)
+- 
+- 
+--for_task3()
+-+
+- 
+- 
+- # 4. Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"changed1.1.0 homework 3 18.10.22\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"29fc8d00e8d53c40839f1f775f18742c0e4ad112\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RESET_MODE\" value=\"HARD\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Fz0NdK1KA0uIf3euYNMpWnXHcp\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;D:/777/старая винда/Мои документы/IT-обучение/Python&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Python.Sem3\">\r\n    <configuration name=\"Sem3\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWorkSeminar3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Unnamed\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"C:\\Users\\TESO\\AppData\\Local\\Microsoft\\WindowsApps\\python3.10.exe\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork11.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork11.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork10.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork10.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Python.Unnamed\" />\r\n      <item itemvalue=\"Python.Sem3\" />\r\n      <item itemvalue=\"Python.main (1)\" />\r\n      <item itemvalue=\"Python.main\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.Sem3\" />\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"\" />\r\n      <created>1665479568205</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1665479568205</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"finish homework\">\r\n      <created>1665520652815</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665520652815</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"finish homework1.0\">\r\n      <created>1665521443436</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665521443436</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"reload1.0\">\r\n      <created>1665924473714</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665924473714</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"reload1.01\">\r\n      <created>1665927111766</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665927111766</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"reload1.03\">\r\n      <created>1665928298305</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665928298305</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"ends homework 11.10.22\">\r\n      <created>1665932206495</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665932206495</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"ends homework 11.10.22\">\r\n      <created>1665932274475</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665932274475</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"changed1.0.0 homework 3 18.10.22\">\r\n      <created>1666104597334</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666104597334</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"changed1.1.0 homework 3 18.10.22\">\r\n      <created>1666187510426</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666187510426</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"finish homework\" />\r\n    <MESSAGE value=\"finish homework1.0\" />\r\n    <MESSAGE value=\"reload1.0\" />\r\n    <MESSAGE value=\"reload1.01\" />\r\n    <MESSAGE value=\"reload1.02\" />\r\n    <MESSAGE value=\"reload1.03\" />\r\n    <MESSAGE value=\"reload1.04\" />\r\n    <MESSAGE value=\"ends homework 11.10.22\" />\r\n    <MESSAGE value=\"changed1.0.0 homework 3 18.10.22\" />\r\n    <MESSAGE value=\"changed1.1.0 homework 3 18.10.22\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"changed1.1.0 homework 3 18.10.22\" />\r\n    <option name=\"GROUP_MULTIFILE_MERGE_BY_DIRECTORY\" value=\"true\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision e4a05ebfad0b17edc0aadd7c8f3295af97b1ba35)
+-+++ b/.idea/workspace.xml	(date 1666249726282)
+-@@ -1,8 +1,7 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-   <component name="ChangeListManager">
+--    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="changed1.1.0 homework 3 18.10.22">
+--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="changed1.3.0 homework 3 18.10.22">
+-       <change beforePath="$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-@@ -213,7 +212,14 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1666187510426</updated>
+-     </task>
+--    <option name="localTasksCounter" value="10" />
+-+    <task id="LOCAL-00010" summary="changed1.3.0 homework 3 18.10.22">
+-+      <created>1666191201074</created>
+-+      <option name="number" value="00010" />
+-+      <option name="presentableId" value="LOCAL-00010" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1666191201074</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="11" />
+-     <servers />
+-   </component>
+-   <component name="Vcs.Log.Tabs.Properties">
+-@@ -238,7 +244,8 @@
+-     <MESSAGE value="ends homework 11.10.22" />
+-     <MESSAGE value="changed1.0.0 homework 3 18.10.22" />
+-     <MESSAGE value="changed1.1.0 homework 3 18.10.22" />
+--    <option name="LAST_COMMIT_MESSAGE" value="changed1.1.0 homework 3 18.10.22" />
+-+    <MESSAGE value="changed1.3.0 homework 3 18.10.22" />
+-+    <option name="LAST_COMMIT_MESSAGE" value="changed1.3.0 homework 3 18.10.22" />
+-     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+-   </component>
+- </project>
+-\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_19_10_2022_22_19__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_10_2022_22_19__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_10_2022_22_19__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_10_2022_22_19__Changes_.xml	(revision 703b723a223b646041b2af747a0d545f950023bc)
++++ /dev/null	(revision 703b723a223b646041b2af747a0d545f950023bc)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Checkout_at_19_10_2022_22_19_[Changes]" date="1666207208172" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_10_2022_22_19_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 19.10.2022 22:19 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_18_47_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_18_47_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_18_47_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_20_10_2022_18_47_[Changes]/shelved.patch	(revision 703b723a223b646041b2af747a0d545f950023bc)
++++ /dev/null	(revision 703b723a223b646041b2af747a0d545f950023bc)
+@@ -1,73 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"end homework sem3 1.0.0\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RESET_MODE\" value=\"HARD\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Fz0NdK1KA0uIf3euYNMpWnXHcp\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"last_opened_file_path\": \"D:/777/старая винда/Мои документы/IT-обучение/Python\",\r\n    \"settings.editor.selected.configurable\": \"proofread\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Python.Sem3\">\r\n    <configuration name=\"Sem3\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWorkSeminar3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Unnamed\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"C:\\Users\\TESO\\AppData\\Local\\Microsoft\\WindowsApps\\python3.10.exe\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork11.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork11.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork10.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork10.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Python.Unnamed\" />\r\n      <item itemvalue=\"Python.Sem3\" />\r\n      <item itemvalue=\"Python.main (1)\" />\r\n      <item itemvalue=\"Python.main\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.Sem3\" />\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"\" />\r\n      <created>1665479568205</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1665479568205</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"finish homework\">\r\n      <created>1665520652815</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665520652815</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"finish homework1.0\">\r\n      <created>1665521443436</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665521443436</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"reload1.0\">\r\n      <created>1665924473714</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665924473714</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"reload1.01\">\r\n      <created>1665927111766</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665927111766</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"reload1.03\">\r\n      <created>1665928298305</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665928298305</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"ends homework 11.10.22\">\r\n      <created>1665932206495</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665932206495</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"ends homework 11.10.22\">\r\n      <created>1665932274475</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665932274475</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"changed1.0.0 homework 3 18.10.22\">\r\n      <created>1666104597334</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666104597334</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"changed1.1.0 homework 3 18.10.22\">\r\n      <created>1666187510426</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666187510426</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"end homework sem3 1.0.0\">\r\n      <created>1666213309658</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666213309658</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"finish homework\" />\r\n    <MESSAGE value=\"finish homework1.0\" />\r\n    <MESSAGE value=\"reload1.0\" />\r\n    <MESSAGE value=\"reload1.01\" />\r\n    <MESSAGE value=\"reload1.02\" />\r\n    <MESSAGE value=\"reload1.03\" />\r\n    <MESSAGE value=\"reload1.04\" />\r\n    <MESSAGE value=\"ends homework 11.10.22\" />\r\n    <MESSAGE value=\"changed1.0.0 homework 3 18.10.22\" />\r\n    <MESSAGE value=\"changed1.1.0 homework 3 18.10.22\" />\r\n    <MESSAGE value=\"end homework sem3 1.0.0\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"end homework sem3 1.0.0\" />\r\n    <option name=\"GROUP_MULTIFILE_MERGE_BY_DIRECTORY\" value=\"true\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 700cd83fb8a9250e89523c595abbc1f3f0c0e03d)
+-+++ b/.idea/workspace.xml	(date 1666280872161)
+-@@ -1,10 +1,7 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-   <component name="ChangeListManager">
+--    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="end homework sem3 1.0.0">
+--      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py" afterDir="false" />
+--    </list>
+-+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="end homework sem3 1.0.1" />
+-     <option name="SHOW_DIALOG" value="false" />
+-     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-@@ -36,15 +33,15 @@
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+-   </component>
+--  <component name="PropertiesComponent"><![CDATA[{
+--  "keyToString": {
+--    "ASKED_ADD_EXTERNAL_FILES": "true",
+--    "RunOnceActivity.OpenProjectViewOnStart": "true",
+--    "RunOnceActivity.ShowReadmeOnStart": "true",
+--    "last_opened_file_path": "D:/777/старая винда/Мои документы/IT-обучение/Python",
+--    "settings.editor.selected.configurable": "proofread"
+-+  <component name="PropertiesComponent">{
+-+  &quot;keyToString&quot;: {
+-+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+-+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-+    &quot;last_opened_file_path&quot;: &quot;D:/777/старая винда/Мои документы/IT-обучение/Python&quot;,
+-+    &quot;settings.editor.selected.configurable&quot;: &quot;proofread&quot;
+-   }
+--}]]></component>
+-+}</component>
+-   <component name="RunManager" selected="Python.Sem3">
+-     <configuration name="Sem3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+-       <module name="Python" />
+-@@ -223,7 +220,14 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1666213309658</updated>
+-     </task>
+--    <option name="localTasksCounter" value="11" />
+-+    <task id="LOCAL-00011" summary="end homework sem3 1.0.1">
+-+      <created>1666215665735</created>
+-+      <option name="number" value="00011" />
+-+      <option name="presentableId" value="LOCAL-00011" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1666215665735</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="12" />
+-     <servers />
+-   </component>
+-   <component name="Vcs.Log.Tabs.Properties">
+-@@ -249,7 +253,8 @@
+-     <MESSAGE value="changed1.0.0 homework 3 18.10.22" />
+-     <MESSAGE value="changed1.1.0 homework 3 18.10.22" />
+-     <MESSAGE value="end homework sem3 1.0.0" />
+--    <option name="LAST_COMMIT_MESSAGE" value="end homework sem3 1.0.0" />
+-+    <MESSAGE value="end homework sem3 1.0.1" />
+-+    <option name="LAST_COMMIT_MESSAGE" value="end homework sem3 1.0.1" />
+-     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+-   </component>
+- </project>
+-\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_19_10_2022_22_20__Changes_.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2022_22_20__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2022_22_20__Changes_.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2022_22_20__Changes_.xml	(revision 703b723a223b646041b2af747a0d545f950023bc)
++++ /dev/null	(revision 703b723a223b646041b2af747a0d545f950023bc)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_19_10_2022_22_20_[Changes]" date="1666207257655" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_10_2022_22_20_[Changes]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 19.10.2022 22:20 [Changes]" />
+-</changelist>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"homework sem5 1.2.0\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"RESET_MODE\" value=\"HARD\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Fz0NdK1KA0uIf3euYNMpWnXHcp\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;D:/777/старая винда/Мои документы/IT-обучение/Python&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Python.Sem5\">\r\n    <configuration name=\"Sem3\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWorkSeminar3\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWorkSeminar3/Sem3.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Sem4\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWorkSeminar4\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWorkSeminar4/Sem4.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Sem5\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWorkSeminar5\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Unnamed\" type=\"PythonConfigurationType\" factoryName=\"Python\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"C:\\Users\\TESO\\AppData\\Local\\Microsoft\\WindowsApps\\python3.10.exe\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main (1)\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork11.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork11.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Python\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/HomeWork10.10.22\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/HomeWork10.10.22/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"Python.Unnamed\" />\r\n      <item itemvalue=\"Python.Sem5\" />\r\n      <item itemvalue=\"Python.Sem4\" />\r\n      <item itemvalue=\"Python.Sem3\" />\r\n      <item itemvalue=\"Python.main (1)\" />\r\n      <item itemvalue=\"Python.main\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.Sem5\" />\r\n        <item itemvalue=\"Python.Sem4\" />\r\n        <item itemvalue=\"Python.Sem3\" />\r\n        <item itemvalue=\"Python.main (1)\" />\r\n        <item itemvalue=\"Python.main\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f70c4d2e-833b-4dd0-9854-b205683fec3b\" name=\"Changes\" comment=\"\" />\r\n      <created>1665479568205</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1665479568205</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"finish homework\">\r\n      <created>1665520652815</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665520652815</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"finish homework1.0\">\r\n      <created>1665521443436</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665521443436</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"reload1.0\">\r\n      <created>1665924473714</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665924473714</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"reload1.01\">\r\n      <created>1665927111766</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665927111766</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"reload1.03\">\r\n      <created>1665928298305</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665928298305</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"ends homework 11.10.22\">\r\n      <created>1665932206495</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665932206495</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"ends homework 11.10.22\">\r\n      <created>1665932274475</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665932274475</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"changed1.0.0 homework 3 18.10.22\">\r\n      <created>1666104597334</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666104597334</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"changed1.1.0 homework 3 18.10.22\">\r\n      <created>1666187510426</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666187510426</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"end homework sem3 1.0.0\">\r\n      <created>1666213309658</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666213309658</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"homework sem4 1.4.0\">\r\n      <created>1666572056989</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666572056989</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"homework sem5 1.2.0\">\r\n      <created>1666736746653</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666736746653</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"13\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"finish homework\" />\r\n    <MESSAGE value=\"finish homework1.0\" />\r\n    <MESSAGE value=\"reload1.0\" />\r\n    <MESSAGE value=\"reload1.01\" />\r\n    <MESSAGE value=\"reload1.02\" />\r\n    <MESSAGE value=\"reload1.03\" />\r\n    <MESSAGE value=\"reload1.04\" />\r\n    <MESSAGE value=\"ends homework 11.10.22\" />\r\n    <MESSAGE value=\"changed1.0.0 homework 3 18.10.22\" />\r\n    <MESSAGE value=\"changed1.1.0 homework 3 18.10.22\" />\r\n    <MESSAGE value=\"end homework sem3 1.0.0\" />\r\n    <MESSAGE value=\"homework sem4 1.4.0\" />\r\n    <MESSAGE value=\"homework sem5 1.2.0\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"homework sem5 1.2.0\" />\r\n    <option name=\"GROUP_MULTIFILE_MERGE_BY_DIRECTORY\" value=\"true\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\r\n          <url>file://$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py</url>\r\n          <line>180</line>\r\n          <option name=\"timeStamp\" value=\"78\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\r\n          <url>file://$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py</url>\r\n          <line>177</line>\r\n          <option name=\"timeStamp\" value=\"79\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n      <default-breakpoints>\r\n        <breakpoint type=\"python-exception\">\r\n          <properties notifyOnTerminate=\"true\" exception=\"BaseException\">\r\n            <option name=\"notifyOnTerminate\" value=\"true\" />\r\n          </properties>\r\n        </breakpoint>\r\n      </default-breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 703b723a223b646041b2af747a0d545f950023bc)
++++ b/.idea/workspace.xml	(date 1666899828007)
+@@ -1,10 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="homework sem5 1.2.0">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar5/Sem5.py" afterDir="false" />
+-    </list>
++    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="homework sem5 1.3.0" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -283,7 +280,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1666736746653</updated>
+     </task>
+-    <option name="localTasksCounter" value="13" />
++    <task id="LOCAL-00013" summary="homework sem5 1.3.0">
++      <created>1666829996908</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1666829996908</updated>
++    </task>
++    <option name="localTasksCounter" value="14" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -311,7 +315,8 @@
+     <MESSAGE value="end homework sem3 1.0.0" />
+     <MESSAGE value="homework sem4 1.4.0" />
+     <MESSAGE value="homework sem5 1.2.0" />
+-    <option name="LAST_COMMIT_MESSAGE" value="homework sem5 1.2.0" />
++    <MESSAGE value="homework sem5 1.3.0" />
++    <option name="LAST_COMMIT_MESSAGE" value="homework sem5 1.3.0" />
+     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+   </component>
+   <component name="XDebuggerManager">

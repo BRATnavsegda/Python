@@ -294,18 +294,50 @@ def for_task3():
     check_line(midl_line1, midl_line2, midl_line3, player)
 
 
-
-
-
-
-for_task3()
-
-
 # 4. Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
 # Входные и выходные данные хранятся в отдельных текстовых файлах.
 
 
+def encode(data_file):
+    new_str = ff.read_in(data_file)
+    print(f'Начальная строка\n{new_str}')
+    count = 0
+    result = ''
+
+    for i in range(len(new_str)):
+        count += 1
+        if (i + 1) == len(new_str) or new_str[i] != new_str[i + 1]:
+            result += str(count) + new_str[i]
+            count = 0
+    print(f'Закодированная строка\n{result}')
+    return result
+
+
+def decode(data_file):
+    new_str = ff.read_in(data_file)
+    result = ''
+    count = ''
+    for i in range(len(new_str)):
+        if new_str[i].isdigit():
+            count += new_str[i]
+        else:
+            result += new_str[i] * int(count)
+            count = ''
+    print(f'Декодированная строка\n{result}')
+
+    return result
+
+
 def for_task4():
-    a = 0
+    new_str = encode('sem5_file1.txt')
+    ff.write_in('sem5_file2.txt', new_str)
+    decode('sem5_file2.txt')
+
+
+
+for_task4()
+
+
+
 
 # lets_go()
