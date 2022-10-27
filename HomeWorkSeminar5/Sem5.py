@@ -188,21 +188,21 @@ def check_line(line1, line2, line3, player):
     i = 1
     print_lines(line1, line2, line3)
     while i < 10:
-        turn = int(ff.enter_number(f"\nХодит игрок{player}.\n Введите число от 1 до 9: "))
+        turn = int(ff.enter_number(f"\nХодит игрок{player}.\n Введите число от 1 до 9:\n--> "))
         while turn < 1 or turn > 9:
-            turn = int(ff.enter_number(f"\nХодит игрок{player}.\n Введите число от 1 до 9: "))
+            turn = int(ff.enter_number(f"\nХодит игрок{player}.\n Введите число от 1 до 9:\n--> "))
 
-        if turn == 1 and (line1[2] == "*"):
+        if turn == 7 and (line1[2] == "*"):
             line1[2] = l[player]
             get_winner(line1, line2, line3, player)
             i += 1
             player = switch(player)
-        elif turn == 2 and (line1[4] == "*"):
+        elif turn == 8 and (line1[4] == "*"):
             line1[4] = l[player]
             get_winner(line1, line2, line3, player)
             i += 1
             player = switch(player)
-        elif turn == 3 and (line1[6] == "*"):
+        elif turn == 9 and (line1[6] == "*"):
             line1[6] = l[player]
             get_winner(line1, line2, line3, player)
             i += 1
@@ -222,26 +222,25 @@ def check_line(line1, line2, line3, player):
             get_winner(line1, line2, line3, player)
             i += 1
             player = switch(player)
-        elif turn == 7 and (line3[2] == "*"):
+        elif turn == 1 and (line3[2] == "*"):
             line3[2] = l[player]
             get_winner(line1, line2, line3, player)
             i += 1
             player = switch(player)
-        elif turn == 8 and (line3[4] == "*"):
+        elif turn == 2 and (line3[4] == "*"):
             line3[4] = l[player]
             get_winner(line1, line2, line3, player)
             i += 1
             player = switch(player)
-        elif turn == 9 and (line3[6] == "*"):
+        elif turn == 3 and (line3[6] == "*"):
             line3[6] = l[player]
             get_winner(line1, line2, line3, player)
             i += 1
             player = switch(player)
         else:
-            print('\nСюда уже кто-то походил\nСделайте ход в другую клетку\n')
+            print('\n!!!Сюда уже кто-то походил!!!\n!!!!Сделайте ход в другую клетку!!!!\n')
 
         print_lines(line1, line2, line3)
-
 
     return line1, line2, line3, player
 
@@ -259,12 +258,12 @@ def get_winner(line1, line2, line3, player):
                 (line1[2] == symbol and line2[4] == symbol and line3[6] == symbol) or
                 (line1[6] == symbol and line2[4] == symbol and line3[2] == symbol)):
             print_lines(line1, line2, line3)
-            print(f">>>>>>Выиграл игрок {player}<<<<<<")
+            print(f">>>>>>>>>>Выиграл игрок {player}<<<<<<<<<<")
             exit()
     if line1.count("*") != 0 and line2.count("*") != 0 and line3.count("*") != 0:
         return line1, line2, line3, player
     else:
-        print("Ничья, победила дружба.")
+        print(">>>>>>>>>>Ничья, победила дружба<<<<<<<<<<")
 
 
 def print_lines(line1, line2, line3):
@@ -279,6 +278,15 @@ def print_lines(line1, line2, line3):
 
 def for_task3():
     player = int(ff.rand_num(0, 1))
+    print("\nНачинаем игру в крестики-нолики!\n"
+          "Для хода необходимо ввести цифру (как на NumLock), \nкоторая соответствует позиции на поле\n"
+          "Цифры соответствуют таким позициям:")
+
+    midl_line11 = list("| 7 8 9 |")
+    midl_line22 = list("| 4 5 6 |")
+    midl_line33 = list("| 1 2 3 |")
+
+    print_lines(midl_line11, midl_line22, midl_line33)
 
     midl_line1 = list("| * * * |")  # 2.4.6
     midl_line2 = list("| * * * |")
