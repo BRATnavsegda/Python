@@ -323,4 +323,4 @@ def for_task4():
     decode('sem5_file2.txt')
 
 
-# lets_go()
+lets_go()
