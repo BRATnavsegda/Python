@@ -38,3 +38,17 @@ def sum_dict(dict1, dict2):  # сложение словарей {1: 10, 2: 20} 
     for e in dict2.keys():   # = {1: 20, 2: 40}
         dict1[e] = int(dict1.get(e, 0)) + int(dict2[e])
 
+
+# Открыть командную строку windows
+# Установить pyinstaller
+
+# pip install pyinstaller
+
+# Затем перейти в папку с Вашим файлом .py в командной строке (при помощи команды cd)
+# Запустить команду pyinstaller не забудьте указать имя вашего скрипта
+
+# pyinstaller --onefile <your_script_name>.py
+
+# Всё - у вас в папке появится папка src и там будет .exe файл.
+
+
