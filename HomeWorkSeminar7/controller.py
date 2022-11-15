@@ -1,4 +1,4 @@
-import csv
+﻿import csv
 import view
 import files_work as fw
 
@@ -15,39 +15,45 @@ def start():
         action = int(view.getValue('--> '))
 
         if action == 1:
-            fio = view.getValue('Введите ФИО: ')
-            tel_number = view.getValue('Введите номер ')
             cat = fw.read_in('numbers.csv')
-            print(cat)
+            fio = view.getValue('Введите наименование: ')
+            tel_number = view.getValue('Введите телефонный номер ')
+            i = 1
+            for key in cat:
+                if int(key) == i:
+                    i += 1
+            cat[i] = f'{fio} | {tel_number}'
+            fw.write_in('numbers.csv', cat)
+
+        elif action == 2:
+            print()
+            cat = fw.read_in('numbers.csv')
+            view.showinfo('Уже сохраненные контакты:\n')
+            for i, j in cat.items():
+                view.showinfo(f'{i}, {j}')
+        elif action == 3:
+            print()
+            cat = fw.read_in('numbers.csv')
+            view.showinfo('Уже сохраненные контакты:\n')
+            for i, j in cat.items():
+                view.showinfo(f'{i}, {j}')
+            del_num = view.getValue('Введите порядковый номер контакта для удаления\n-->')
+
+            if cat[del_num]:
+                del cat[del_num]
+
+                # else:
+                #     view.showinfo('Такого номера не было, попробуй еще раз\n'
+                #                   'stupid leather bag...')
+                #     break
             i = 1
             for key in cat:
                 if int(key) == i:
                     i += 1
                 else:
-                    cat[i] = f'{fio} | {tel_number}'
+                    cat[i] = cat[key]
+                    del cat[key]
+                    i += 1
             fw.write_in('numbers.csv', cat)
-
-        elif action == 2:
-            print()
-            phone_book = fw.dict_from_files()
-            for i, j in phone_book.items():
-                view.showinfo(f'{i} - {j}')
-        elif action == 3:
-            view.showinfo('\nФИО контактов:\n')
-            phone_book = fw.dict_from_files()
-            for key in phone_book.keys():
-                view.showinfo(f'{key}')
-            while True:
-                view.showinfo('Введите фамилию контакта для удаления: \n')
-                surname = view.getValue('--> ')
-                if surname in phone_book.keys():
-                    break
-
         else:
             break
-
-
-    # model.init(fio, tel_number)
-
-
-

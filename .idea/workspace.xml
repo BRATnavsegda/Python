@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="start homework sem7">
+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="homework sem7 1.0.1">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_10_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_10_29__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWorkSeminar7/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar7/controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWorkSeminar7/files_work.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar7/files_work.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar7/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar7/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar7/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar7/numbers.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar7/numbers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar7/numbers.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/777/старая винда/Мои документы/IT-обучение/Python&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>

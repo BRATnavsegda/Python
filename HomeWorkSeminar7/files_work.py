@@ -2,7 +2,7 @@ import csv
 
 
 def write_in(file, input_data):  # записать в файл
-    with open(file, 'w') as data:
+    with open(file, 'w', newline='') as data:
         writer = csv.writer(data)
         for row in input_data.items():
             writer.writerow(row)
@@ -10,7 +10,7 @@ def write_in(file, input_data):  # записать в файл
 
 def read_in(file):  # считать из файла
     res = {}
-    with open(file) as data:
+    with open(file, 'r') as data:
 
         for count, name_number in csv.reader(data):
             res[count] = name_number
