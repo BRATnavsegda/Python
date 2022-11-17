@@ -1,4 +1,4 @@
-﻿import csv
+﻿import csv_to_json
 import view
 import files_work as fw
 
@@ -22,7 +22,7 @@ def start():
             for key in cat:
                 if int(key) == i:
                     i += 1
-            cat[i] = f'{fio} | {tel_number}'
+            cat[i] = f'{fio} / {tel_number}'
             fw.write_in('numbers.csv', cat)
 
         elif action == 2:
@@ -42,11 +42,7 @@ def start():
             if cat[del_num]:
                 del cat[del_num]
 
-                # else:
-                #     view.showinfo('Такого номера не было, попробуй еще раз\n'
-                #                   'stupid leather bag...')
-                #     break
-            i = 1
+            i = 0
             for key in cat:
                 if int(key) == i:
                     i += 1
@@ -56,4 +52,6 @@ def start():
                     i += 1
             fw.write_in('numbers.csv', cat)
         else:
+            view.showinfo('Ваша телефонная книга сохранена в 2 форматах: csv и json.')
+            csv_to_json.make_json()
             break
