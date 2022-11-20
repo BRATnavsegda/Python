@@ -1,3 +1,3 @@
 import controller
 
-controller.start(grafics=1)
+controller.start(grafics=2)

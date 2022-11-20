@@ -7,8 +7,8 @@ main_window = None
 main_table = None
 
 
-def start_tk():
-    init()
+# def start_tk():
+
 
 
 def init():
@@ -63,17 +63,28 @@ def init_control_panel():
     btn_remove = ttk.Button(top_panel, text='Удалить', command=btn_remove_click)
     btn_remove.pack(side=LEFT, padx=10, pady=5)
 
-    btn_load = ttk.Button(top_panel, text='Загрузить', command=btn_load_click)
-    btn_load.pack(side=LEFT, pady=5)
+    # btn_load = ttk.Button(top_panel, text='Добавить', command=btn_add_click())
+    # btn_load.pack(side=LEFT, pady=5)
 
 
 def fill_main_table(str_pattern=''):
     global main_table
     i = 0
-    data = ctrl.get_data_from_database(str_pattern)
-    print(data)
+    res = []
+    res2 = ''
+    data = controller.get_data_from_database()
+    del data[0]
+    # print(data)
+    # for item in data:
+    #     res2 = str(item).split('//')
+    #     print(res2)
+    #     res.append(item[1])
+
+        # print(res)
     for elem in data:
-        main_table.insert('', i, values=elem)
+        a = controller.splitter(elem)
+        print(elem)
+        main_table.insert('', i, values=a)
         i += 1
 
 
@@ -88,18 +99,34 @@ def btn_find_click():
         fill_main_table(str_query)
 
 
-def btn_load_click():
-    file_name = filedialog.askopenfilename(initialdir='./import')
-    ctrl.load_from_csv(file_name)
+def btn_add_click():
+    str_query = main_window.children['top_panel'].children['entry_find'].get()
+    res = str_query.split('/')
+    fio, tel_number = res[0], res[1]
+    controller.add_contact(fio, tel_number)
     clean_main_table()
     fill_main_table()
 
 
 def btn_remove_click():
     data = tuple(main_table.item(main_table.focus())['values'])
+    cat = controller.read_in('numbers.csv')
     if data == ():
         return
-    ctrl.remove_data_from_database(data)
+    # del_num = get_value('Введите порядковый номер контакта для удаления\n-->')
+
+    if cat[data[0]]:
+        del cat[data[0]]
+
+    i = 0
+    for key in cat:
+        if int(key) == i:
+            i += 1
+        else:
+            cat[i] = cat[key]
+            del cat[key]
+            i += 1
+    controller.write_in('numbers.csv', cat)
     clean_main_table()
     fill_main_table()
 
