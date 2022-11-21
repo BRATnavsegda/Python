@@ -70,20 +70,10 @@ def init_control_panel():
 def fill_main_table(str_pattern=''):
     global main_table
     i = 0
-    res = []
-    res2 = ''
     data = controller.get_data_from_database()
     del data[0]
-    # print(data)
-    # for item in data:
-    #     res2 = str(item).split('//')
-    #     print(res2)
-    #     res.append(item[1])
-
-        # print(res)
     for elem in data:
         a = controller.splitter(elem)
-        print(elem)
         main_table.insert('', i, values=a)
         i += 1
 
@@ -95,8 +85,16 @@ def btn_find_click():
         clean_main_table()
         fill_main_table()
     else:
+        cat = controller.read_in('numbers.csv')
+        print(cat)
+        key = ''
+        for k, v in cat.items():
+            if str_query in v:
+                key = k
+
+
         clean_main_table()
-        fill_main_table(str_query)
+        fill_main_table(key)  # продолжить заполнение только одного поля
 
 
 def btn_add_click():
@@ -113,13 +111,17 @@ def btn_remove_click():
     cat = controller.read_in('numbers.csv')
     if data == ():
         return
-    # del_num = get_value('Введите порядковый номер контакта для удаления\n-->')
+    data_str = controller.re_splitter(data)
+    temp = ''
+    for k, v in cat.items():
+        if v == data_str:
+            temp = k
+            print(k)
+    del cat[temp]
 
-    if cat[data[0]]:
-        del cat[data[0]]
-
+    print(cat)
     i = 0
-    for key in cat:
+    for key in cat.copy():
         if int(key) == i:
             i += 1
         else:

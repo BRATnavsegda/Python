@@ -44,7 +44,7 @@ def start_cli():
                 del cat[del_num]
 
             i = 0
-            for key in cat:
+            for key in cat.copy():
                 if int(key) == i:
                     i += 1
                 else:
