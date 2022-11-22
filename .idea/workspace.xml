@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="homework sem8 1.1.1">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_20_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_20_11__Changes_.xml" afterDir="false" />
+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="homework sem8 1.1.3">
+      <change afterPath="$PROJECT_DIR$/HomeWorkSeminar8/add_window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_10_29_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_11_2022_10_29__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/find.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/find.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/find.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/numbers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/numbers.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/numbers.json" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/numbers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/view_cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/view_cli.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/view_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/view_tk.py" afterDir="false" />
     </list>
@@ -56,7 +59,7 @@
       <recent name="C:\Users\TESO\PycharmProjects\Python\Python" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.add_window">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="find" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="add_window" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HomeWorkSeminar8/find.py" />
+      <option name="SCRIPT_NAME" value="D:\777\старая винда\Мои документы\IT-обучение\Python\Python\HomeWorkSeminar8\add_window.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -185,7 +188,7 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.find" />
+      <item itemvalue="Python.add_window" />
       <item itemvalue="Python.main (2)" />
       <item itemvalue="Python.view_tk" />
       <item itemvalue="Python.main (1)" />
@@ -193,8 +196,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.add_window" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.find" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.view_tk" />
         <item itemvalue="Python.main" />
@@ -371,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668869147962</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="homework sem8 1.1.3">
+      <created>1669041820795</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669041820795</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -409,7 +419,8 @@
     <MESSAGE value="homework sem7 1.2.0" />
     <MESSAGE value="homework sem7 1.2.1" />
     <MESSAGE value="homework sem8 1.1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework sem8 1.1.1" />
+    <MESSAGE value="homework sem8 1.1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework sem8 1.1.3" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

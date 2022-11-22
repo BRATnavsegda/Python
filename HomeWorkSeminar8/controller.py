@@ -38,13 +38,13 @@ def add_in(file, input_data):  # добавить строку в файл
     f.close()
 
 
-def add_contact(fio, tel_number, catalog='numbers.csv'):
+def add_contact(fio, tel_number, job_title, age, salary, catalog='numbers.csv'):
     cat = read_in(catalog)
     i = 1
     for key in cat:
         if int(key) == i:
             i += 1
-    cat[i] = f'{fio} / {tel_number}'
+    cat[i] = f'{fio} / {tel_number} / {job_title} / {age} / {salary}'
     write_in('numbers.csv', cat)
 
 
@@ -56,11 +56,11 @@ def get_data_from_database(file='numbers.csv') -> list:
 
 
 def splitter(file) -> list:
-    res_str = file[1].split('\\')
+    res_str = file[1].split('/')
     res = [res_str[0]] + [res_str[1]]
     return res
 
 
 def re_splitter(data):
-    res: str = data[0] + '\\' + data[1]
+    res: str = data[0] + '/' + data[1]
     return res

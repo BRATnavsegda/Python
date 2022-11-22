@@ -11,20 +11,23 @@ def get_value(b):
 
 
 def start_cli():
-    show_info("\n\nПривет! Это плохой телефонный справочник!\n")
+    show_info("\n\nПривет! Это информационная система какой-то компании!\n")
     while True:
 
-        show_info("\nВы хотите считать сохраненные номера или добавить новый?\n\n"
-                  "\tВвести новый номер, введите цифру 1\n"
-                  "\tПосмотреть записанные номера, введите цифру 2\n"
-                  "\tУдалить один из номеров, введите цифру 3\n"
+        show_info("\nВы хотите считать сохраненные контакты или добавить новый?\n\n"
+                  "\tДобавить нового служащего, введите цифру 1\n"
+                  "\tПосмотреть записанные контакты, введите цифру 2\n"
+                  "\tУдалить один из контактов, введите цифру 3\n"
                   "\n\n\t>>>Для выхода введите что угодно, кроме указанного выше<<<\n")
         action = int(get_value('--> '))
 
         if action == 1:
-            fio = get_value('Введите наименование: ')
-            tel_number = get_value('Введите телефонный номер ')
-            controller.add_contact(fio, tel_number)
+            fio = get_value('Введите ФИО служащего: ')
+            tel_number = get_value('Введите телефонный номер служащего: ')
+            job_title = get_value('Укажите должность служащего: ')
+            age = get_value('Укажите возраст служащего: ')
+            salary = get_value('Укажите оклад служащего: ').replace(',', '.')
+            controller.add_contact(fio, tel_number, job_title, age, salary)
 
         elif action == 2:
             print()
@@ -53,6 +56,6 @@ def start_cli():
                     i += 1
             controller.write_in('numbers.csv', cat)
         else:
-            show_info('Ваша телефонная книга сохранена в 2 форматах: csv и json.')
+            show_info('Ваша информационная система сохранена в 2 форматах: csv и json.')
             csv_to_json.make_json()
             break
