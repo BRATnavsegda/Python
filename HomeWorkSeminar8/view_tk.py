@@ -1,7 +1,7 @@
 from tkinter import filedialog, ttk
 from tkinter import *
 import add_window as adw
-import controller
+import controller as ctrl
 
 
 main_window = None
@@ -71,10 +71,10 @@ def init_control_panel():
 def fill_main_table(str_pattern=''):
     global main_table
     i = 0
-    data = controller.get_data_from_database()
+    data = ctrl.get_data_from_database()
     del data[0]
     for elem in data:
-        a = controller.splitter(elem)
+        a = ctrl.splitter(elem)
         main_table.insert('', i, values=a)
         i += 1
 
@@ -86,35 +86,30 @@ def btn_find_click():
         clean_main_table()
         fill_main_table()
     else:
-        cat = controller.read_in('numbers.csv')
+        cat = ctrl.read_in('numbers.csv')
         print(cat)
         key = ''
         for k, v in cat.items():
             if str_query in v:
                 key = k
 
-
         clean_main_table()
         fill_main_table(key)  # продолжить заполнение только одного поля
 
 
 def btn_add_click():
-    fio = adw.get_value('Введите ФИО служащего: ')
-    tel_number = adw.get_value('Введите телефонный номер служащего: ')
-    job_title = adw.get_value('Укажите должность служащего: ')
-    age = adw.get_value('Укажите возраст служащего: ')
-    salary = adw.get_value('Укажите оклад служащего: ').replace(',', '.')
-    controller.add_contact(fio, tel_number, job_title, age, salary)
+    data = adw.get_value()
+    ctrl.add_contact_all(data)
     clean_main_table()
     fill_main_table()
 
 
 def btn_remove_click():
     data = tuple(main_table.item(main_table.focus())['values'])
-    cat = controller.read_in('numbers.csv')
+    cat = ctrl.read_in('numbers.csv')
     if data == ():
         return
-    data_str = controller.re_splitter(data)
+    data_str = ctrl.re_splitter(data)
     temp = ''
     for k, v in cat.items():
         if v == data_str:
@@ -131,7 +126,7 @@ def btn_remove_click():
             cat[i] = cat[key]
             del cat[key]
             i += 1
-    controller.write_in('numbers.csv', cat)
+    ctrl.write_in('numbers.csv', cat)
     clean_main_table()
     fill_main_table()
 
@@ -140,6 +135,9 @@ def clean_main_table():
     for i in main_table.get_children():
         main_table.delete(i)
 
+
+# data = adw.get_value()
+# ctrl.add_contact_all(data)
 # from tkinter import *
 # from tkinter import ttk
 #

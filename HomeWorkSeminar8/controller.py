@@ -48,6 +48,16 @@ def add_contact(fio, tel_number, job_title, age, salary, catalog='numbers.csv'):
     write_in('numbers.csv', cat)
 
 
+def add_contact_all(data, catalog='numbers.csv'):
+    cat = read_in(catalog)
+    i = 1
+    for key in cat:
+        if int(key) == i:
+            i += 1
+    cat[i] = data
+    write_in('numbers.csv', cat)
+
+
 def get_data_from_database(file='numbers.csv') -> list:
     res = []
     with open(file, 'r', encoding='utf-8') as data:
