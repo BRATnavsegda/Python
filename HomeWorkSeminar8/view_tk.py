@@ -39,11 +39,22 @@ def init_main_window():
 def init_main_table():
     global main_table
 
-    main_table = ttk.Treeview(main_window, show='headings', columns=['Наименование', 'Телефон'], name='table_main')
+    main_table = ttk.Treeview(main_window, show='headings',
+                              columns=['Наименование', 'Телефонный номер',
+                                       'Должность', 'Возраст', 'Оклад'],
+                              name='table_main')
     main_table.column('Наименование', width=200, anchor=W)
-    main_table.column('Телефон', width=100, anchor=E)
+    main_table.column('Телефонный номер', width=100, anchor=E)
+    main_table.column('Должность', width=100, anchor=E)
+    main_table.column('Возраст', width=100, anchor=E)
+    main_table.column('Оклад', width=100, anchor=E)
+
     main_table.heading('Наименование', text='Наименование', anchor=CENTER)
-    main_table.heading('Телефон', text='Телефон', anchor=CENTER)
+    main_table.heading('Телефонный номер', text='Телефонный номер', anchor=CENTER)
+    main_table.heading('Должность', text='Должность', anchor=CENTER)
+    main_table.heading('Возраст', text='Возраст', anchor=CENTER)
+    main_table.heading('Оклад', text='Оклад', anchor=CENTER)
+
 
     # for i in range(10):
     #     main_table.insert('',i,values=(1,2))
@@ -107,17 +118,16 @@ def btn_add_click():
 def btn_remove_click():
     data = tuple(main_table.item(main_table.focus())['values'])
     cat = ctrl.read_in('numbers.csv')
+
     if data == ():
         return
     data_str = ctrl.re_splitter(data)
     temp = ''
-    for k, v in cat.items():
-        if v == data_str:
-            temp = k
-            print(k)
+    for key, value in cat.items():
+        if data_str == value:
+            temp = key
     del cat[temp]
 
-    print(cat)
     i = 0
     for key in cat.copy():
         if int(key) == i:
@@ -126,6 +136,7 @@ def btn_remove_click():
             cat[i] = cat[key]
             del cat[key]
             i += 1
+
     ctrl.write_in('numbers.csv', cat)
     clean_main_table()
     fill_main_table()

@@ -67,10 +67,10 @@ def get_data_from_database(file='numbers.csv') -> list:
 
 def splitter(file) -> list:
     res_str = file[1].split('/')
-    res = [res_str[0]] + [res_str[1]]
+    res = [res_str[0]] + [res_str[1]] + [res_str[2]] + [res_str[3]] + [res_str[4]]
     return res
 
 
 def re_splitter(data):
-    res: str = data[0] + '/' + data[1]
+    res: str = data[0] + '/' + data[1] + '/' + data[2] + '/' + data[3] + '/' + data[4]
     return res
