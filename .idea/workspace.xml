@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="homework sem8 1.3.0">
+      <change afterPath="$PROJECT_DIR$/seminar9/seminar9.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2022_16_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_11_2022_16_31__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/numbers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/numbers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/numbers.json" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/numbers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar8/view_tk.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar8/view_tk.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
