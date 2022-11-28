@@ -1,7 +1,8 @@
 from tkinter import *
 from tkinter import ttk
+import controller as ctrl
 
-data = None
+window = None
 feet_fio = None
 feet_tel_number = None
 feet_job_title = None
@@ -10,13 +11,17 @@ feet_salary = None
 
 
 def calculate():
-    global data
+    global window
     data = (feet_fio.get() + ' / ' + feet_tel_number.get() + ' / ' + \
-           feet_job_title.get() + ' / ' + feet_age.get() + ' / ' + feet_salary.get()).replace(',', '.')
+            feet_job_title.get() + ' / ' + feet_age.get() + ' / ' + feet_salary.get()).replace(',', '.')
+    # a = feet_job_title.get()
+    # print(type(a), a)
+    ctrl.add_contact_all(data)
+    window.destroy()
 
 
 def get_value():
-    global data
+    global window
     global feet_fio
     global feet_tel_number
     global feet_job_title
@@ -73,7 +78,6 @@ def get_value():
 
     window.mainloop()
 
-    return data
 
 
 # get_value('text')

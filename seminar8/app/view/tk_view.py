@@ -23,7 +23,7 @@ def init_main_table():
     
     global main_table
 
-    main_table = ttk.Treeview(main_window,show='headings',columns=['Наименование','Телефон'],name='table_main')
+    main_table = ttk.Treeview(main_window, show='headings',columns=['Наименование','Телефон'],name='table_main')
     main_table.column('Наименование',width=200,anchor=W)
     main_table.column('Телефон',width=100,anchor=E)
     main_table.heading('Наименование', text='Наименование',anchor=CENTER)

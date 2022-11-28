@@ -33,7 +33,7 @@ def init_main_window():
     h = h - 200
 
     main_window.title('Это информационная система какой-то компании!')
-    main_window.geometry((f'700x400+{w}+{h}'))
+    main_window.geometry((f'1000x400+{w}+{h}'))
 
 
 def init_main_table():
@@ -43,11 +43,11 @@ def init_main_table():
                               columns=['Наименование', 'Телефонный номер',
                                        'Должность', 'Возраст', 'Оклад'],
                               name='table_main')
-    main_table.column('Наименование', width=200, anchor=W)
-    main_table.column('Телефонный номер', width=100, anchor=E)
-    main_table.column('Должность', width=100, anchor=E)
-    main_table.column('Возраст', width=100, anchor=E)
-    main_table.column('Оклад', width=100, anchor=E)
+    main_table.column('Наименование', width=300, anchor=W)
+    main_table.column('Телефонный номер', width=150, anchor=CENTER)
+    main_table.column('Должность', width=200, anchor=CENTER)
+    main_table.column('Возраст', width=50, anchor=CENTER)
+    main_table.column('Оклад', width=100, anchor=W)
 
     main_table.heading('Наименование', text='Наименование', anchor=CENTER)
     main_table.heading('Телефонный номер', text='Телефонный номер', anchor=CENTER)
@@ -81,24 +81,30 @@ def init_control_panel():
 
 def fill_main_table(str_pattern=''):
     global main_table
-    i = 0
     data = ctrl.get_data_from_database()
-    del data[0]
-    for elem in data:
-        a = ctrl.splitter(elem)
+
+    i = 0
+    if str_pattern:
+        a = ctrl.splitter(data[int(str_pattern)])
         main_table.insert('', i, values=a)
-        i += 1
+    else:
+        del data[0]
+        for elem in data:
+            a = ctrl.splitter(elem)
+            main_table.insert('', i, values=a)
+            i += 1
 
 
 
 def btn_find_click():
+    global main_table
+
     str_query = main_window.children['top_panel'].children['entry_find'].get()
     if str_query == '':
         clean_main_table()
         fill_main_table()
     else:
         cat = ctrl.read_in('numbers.csv')
-        print(cat)
         key = ''
         for k, v in cat.items():
             if str_query in v:
@@ -109,13 +115,17 @@ def btn_find_click():
 
 
 def btn_add_click():
-    data = adw.get_value()
-    ctrl.add_contact_all(data)
+    global main_table
+
+    adw.get_value()
+
     clean_main_table()
     fill_main_table()
 
 
 def btn_remove_click():
+    global main_table
+
     data = tuple(main_table.item(main_table.focus())['values'])
     cat = ctrl.read_in('numbers.csv')
 
@@ -143,6 +153,8 @@ def btn_remove_click():
 
 
 def clean_main_table():
+    global main_table
+
     for i in main_table.get_children():
         main_table.delete(i)
 
