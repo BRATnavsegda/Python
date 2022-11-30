@@ -1,9 +1,11 @@
 ﻿import view_tk
 import view_cli
 import csv
+import log_model
 
 
 def start(grafics):
+    log_model.main()
     if grafics == 1:
         view_cli.start_cli()
     else:
