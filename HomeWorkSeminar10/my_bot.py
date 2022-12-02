@@ -28,13 +28,13 @@ def get_your_age(value):
             # Получаем количество дней, часов и минут,
             # со дня рождения
             years = delta.days / 365
-
+            # months = delta.days - (years * 365) -
             days = delta.days - years * 365
             hours = delta.seconds // 3600
             minutes = (delta.seconds - hours * 3600) // 60
             result = ''
 
-            result = choose_plural(int(years), ('год ', 'года ', 'лет '))  # str(int(years)) + ' и '
+            result = choose_plural(int(years), ('год ', 'года ', 'лет '))
             # Нужная строка формируется
             if days > 0:
                 result += choose_plural(days, ('день', 'дня', 'дней'))

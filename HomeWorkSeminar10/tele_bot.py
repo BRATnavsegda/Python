@@ -8,7 +8,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
                     level=logging.INFO, filename="my_log.log", filemode="a")
 
 
-TOKEN = '5822831148:AAElou3LjtIhNCQFA99G5jPmwNrsLp_-Ou4'
+TOKEN = 'TOKEN_________________'
 # получаем экземпляр `Updater`
 updater = Updater(token=TOKEN, use_context=True)
 # получаем экземпляр `Dispatcher`
