@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="homework sem10 1,1,0">
+    <list default="true" id="f70c4d2e-833b-4dd0-9854-b205683fec3b" name="Changes" comment="homework sem10 1,2,0">
+      <change afterPath="$PROJECT_DIR$/seminar12/client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkSeminar10/my_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkSeminar10/my_bot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669902927580</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="homework sem10 1,2,0">
+      <created>1669986953487</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1669986953488</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +444,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="reload1.03" />
     <MESSAGE value="reload1.04" />
     <MESSAGE value="ends homework 11.10.22" />
     <MESSAGE value="changed1.0.0 homework 3 18.10.22" />
@@ -462,7 +468,8 @@
     <MESSAGE value="homework sem9 end for now" />
     <MESSAGE value="homework sem10" />
     <MESSAGE value="homework sem10 1,1,0" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework sem10 1,1,0" />
+    <MESSAGE value="homework sem10 1,2,0" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework sem10 1,2,0" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
